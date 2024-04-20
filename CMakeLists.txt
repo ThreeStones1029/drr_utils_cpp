@@ -12,10 +12,12 @@ include_directories(${Boost_INCLUDE_DIRS})
 
 # 添加头文件目录
 include_directories(include/io)
+include_directories(include/detection)
 
 # 源文件列表
 set(SOURCES 
     src/io/common.cpp
+    src/detection/GenDetectionDataset.cpp
     main_drr_detection_dataset.cpp)
 
 add_executable(main_drr_detection_dataset ${SOURCES})

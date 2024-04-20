@@ -1,8 +1,17 @@
+/*
+ * @Description: 
+ * @version: 
+ * @Author: ThreeStones1029 2320218115@qq.com
+ * @Date: 2024-04-01 14:09:34
+ * @LastEditors: ShuaiLei
+ * @LastEditTime: 2024-04-20 07:54:28
+ */
 #include <iostream>
 #include <filesystem>
 #include <boost/program_options.hpp>
 #include <yaml-cpp/yaml.h> //yaml-cpp 头文件
 #include "common.h"
+#include "GenDetectionDataset.h"
 
 
 int main(int argc,char** argv){
@@ -31,19 +40,21 @@ int main(int argc,char** argv){
          std::cerr << ex.what() << "\n";
    }
 
-
+   // whether regenerate drrs and masks
    if (regenerate_specified_cts){
       std::string dataset_path = config["dataset_path"].as<std::string>();
       std::filesystem::path dir_path(dataset_path);
       try {
          // 删除文件夹及其下面的所有文件和文件夹
          remove_all_files(dir_path);
-         std::cout << "Directory and its contents deleted successfully." << std::endl;
+         std::cout << "[Note]: Directory and its contents deleted successfully." << std::endl;
       } catch (const std::filesystem::filesystem_error& ex) {
          std::cerr << "Error deleting directory: " << ex.what() << std::endl;
       }
-      std::cout << "[Note]" << dataset_path << " is deleted." << "Then Generate from zero." << std::endl;
+      std::cout << "Then Generate from zero." << std::endl;
    }
+
+   GenDetectionDataset dataset(config);
         
 
    return 0;
