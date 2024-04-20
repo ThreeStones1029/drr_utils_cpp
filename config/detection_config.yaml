@@ -1,5 +1,5 @@
 ct_root_path: data/test
-dataset_path: data/test_drr
+dataset_path: ../data/test_drr
 dataset_images_path: data/test_drr/images
 dataset_masks_path: data/test_drr/masks
 dataset_json_path: data/test_drr/detection_data.json
