@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-04-25 14:48:28
+ * @LastEditTime: 2024-04-26 11:31:39
  */
 #include "GenDetectionDataset.h"
 #include "common.h"
@@ -67,7 +67,7 @@ GenDetectionDataset::GenDetectionDataset(const YAML::Node& config) {
     //                                     "LA_rotations": self.LA_rotations, "LA_translations": self.LA_translations}
     // self.detection_dataset = COCODetectionData(config.projection_parameter, self.rotations_and_translations)
     
-    this->delete_mask = (this->AP_num_samples + this->LA_num_samples >= 2000) ? ture : false;
+    this->delete_mask = (this->AP_num_samples + this->LA_num_samples >= 2000) ? true : false;
     // create save folder
     // create_folder(self.dataset_path);
     // create_folder(self.dataset_images_path);
