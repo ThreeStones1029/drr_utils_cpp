@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @version: 
+ * @Author: ThreeStones1029 2320218115@qq.com
+ * @Date: 2024-04-20 07:41:10
+ * @LastEditors: ShuaiLei
+ * @LastEditTime: 2024-05-23 13:29:29
+ */
 #ifndef GENDETECTIONDATASET_H
 #define GENDETECTIONDATASET_H
 
@@ -5,11 +13,14 @@
 #include <vector>
 #include <string>
 
+
 class GenDetectionDataset {
 public:
     GenDetectionDataset(const YAML::Node& config); // 构造函数
     ~GenDetectionDataset(); // 析构函数
-    void initializeVector(const YAML::Node& node, std::vector<std::vector<int>>& vec);
+    std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> gen_random_pose_parameters(const std::vector<std::vector<int>> rot_range_list, 
+                                                                                                              const std::vector<std::vector<int>> trans_range_list, 
+                                                                                                              int num_samples);
 
 private:
     YAML::Node config; 
@@ -32,13 +43,17 @@ private:
     std::vector<std::vector<int>> LA_rot_range_list;
     std::vector<std::vector<int>> LA_trans_range_list;
     float min_bbox_percentage_of_height;
-    AP_rotations, AP_translations
-    LA_rotations, LA_translations
-    rotations_and_translations
-    COCODetectionData* detection_dataset;
+    std::unordered_map<std::string, int> specific_heights_map;
+    std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> AP_rotations_and_translations;
+    std::vector<std::vector<double>> AP_rotations;
+    std::vector<std::vector<double>> AP_translations;
+    std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> LA_rotations_and_translations;
+    std::vector<std::vector<double>> LA_rotations;
+    std::vector<std::vector<double>> LA_translations;
+    std::unordered_map<std::string, std::vector<std::vector<double>>> rotations_and_translations;
+    // rotations_and_translations
+    // COCODetectionData* detection_dataset;
     bool delete_mask;
-
-    
 
 
 
