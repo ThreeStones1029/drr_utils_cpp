@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:41:10
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 14:39:38
+ * @LastEditTime: 2024-05-25 15:04:32
  */
 #ifndef GENDETECTIONDATASET_H
 #define GENDETECTIONDATASET_H
@@ -26,7 +26,11 @@ public:
     void check_sub_folders(const std::vector<std::string>& sub_folder_paths);
     void gen_AP_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type);
     void gen_LA_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type);
-
+    void gen_drr(const std::string& ct_name, int i, const std::vector<double>& rotation,
+                 const std::vector<double>& translation, const std::string& filepath, const std::string& view);
+    void gen_mask(const std::string& basename_wo_ext, const std::string& ct_name, int i,
+                  const std::vector<double>& rotation, const std::vector<double>& translation,
+                  const std::string& filepath, const std::string& view);
 
 private:
     YAML::Node config; 

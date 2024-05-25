@@ -4,14 +4,15 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 02:57:42
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 13:27:54
+ * @LastEditTime: 2024-05-25 14:58:41
  */
 #include <iostream>
 #include <fstream>
 #include "file_process.h"
 #include <yaml-cpp/yaml.h>
 #include <nlohmann/json.hpp>
-
+#include <regex>
+#include <filesystem>
 
 void remove_all_files(const std::filesystem::path& dir_path) {
     for (const auto& entry : std::filesystem::directory_iterator(dir_path)) {
@@ -126,4 +127,26 @@ std::vector<std::string> get_sub_folder_path(const std::string& root_path) {
         }
     }
     return sub_folders;
+}
+
+
+std::vector<std::string> glob(const std::string& pattern) {
+    std::vector<std::string> matches;
+    std::string directory = std::filesystem::path(pattern).parent_path().string();
+    std::string filename_pattern = std::filesystem::path(pattern).filename().string();
+
+    std::regex regex_pattern(
+        std::regex_replace(
+            std::regex_replace(filename_pattern, std::regex(R"(\.)"), R"(\.)"),
+            std::regex(R"(\*)"), R"(.*)"
+        )
+    );
+
+    for (const auto& entry : std::filesystem::directory_iterator(directory)) {
+        if (std::regex_match(entry.path().filename().string(), regex_pattern)) {
+            matches.push_back(entry.path().string());
+        }
+    }
+
+    return matches;
 }
