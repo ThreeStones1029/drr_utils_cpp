@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 13:02:24
+ * @LastEditTime: 2024-05-25 14:40:35
  */
 #include "GenDetectionDataset.h"
 #include "coco_detection_data.h"
@@ -13,6 +13,7 @@
 #include "dataset_sample.h"
 #include "debug_print.h"
 #include "nlohmann/json.hpp"
+#include <iostream>
 
 
 GenDetectionDataset::GenDetectionDataset(const YAML::Node& config) {
@@ -73,7 +74,6 @@ GenDetectionDataset::GenDetectionDataset(const YAML::Node& config) {
     this->rotations_and_translations["LA_rotations"] = this->LA_rotations;
     this->rotations_and_translations["LA_translations"] = this->LA_translations;
     this->detection_dataset = std::make_unique<COCODetectionData>(config["projection_parameter"], rotations_and_translations); // 使用智能指针
-    detection_dataset->to_json(this->dataset_json_path);
     this->delete_mask = (this->AP_num_samples + this->LA_num_samples >= 2000) ? true : false;
     // create save folder
     create_folder(this->dataset_path);
@@ -93,4 +93,59 @@ std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> G
     rotations_and_translations = data_rot_and_trans.Monte_Carlo_sample_dataset(rot_range_list,trans_range_list, num_samples);
     // rotations_and_translations = data_rot_and_trans.generate_uniform_samples_grid(rot_range_list,trans_range_list, num_samples);
     return rotations_and_translations;
+}
+
+
+void GenDetectionDataset::gen_multple_cts_drrs_and_masks() {
+    auto total_start_time = std::chrono::high_resolution_clock::now();
+    std::vector<std::string> ct_path_list = get_sub_folder_path(ct_root_path);
+    for (const auto& single_ct_path : ct_path_list) {
+        std::string ct_name = std::filesystem::path(single_ct_path).filename().string();
+        if (std::filesystem::exists(dataset_json_path)) {
+            nlohmann::json info = detection_dataset->load_json(dataset_json_path);
+            AP_rotations = info["rotations_and_translations"]["AP_rotations"];
+            AP_translations = info["rotations_and_translations"]["AP_translations"];
+            LA_rotations = info["rotations_and_translations"]["LA_rotations"];
+            LA_translations = info["rotations_and_translations"]["LA_translations"];
+        }
+        /*------------------------------------------------------------------------------------------------------------------- 
+        # Note if you want regenerate completely,just add "-r all", Otherwise, it will automatically read the existing json 
+        # file and only generate data for ct that is not in the json file #
+        -------------------------------------------------------------------------------------------------------------------*/
+        std::string ct_name_has_ext = ct_name + ".nii.gz";
+        if (std::find(detection_dataset->exist_ct_nii_names["AP"].begin(), detection_dataset->exist_ct_nii_names["AP"].end(), ct_name_has_ext) == detection_dataset->exist_ct_nii_names["AP"].end() &&
+            std::find(detection_dataset->exist_ct_nii_names["LA"].begin(), detection_dataset->exist_ct_nii_names["LA"].end(), ct_name_has_ext) == detection_dataset->exist_ct_nii_names["LA"].end()) {
+            if (specific_height_list.find(ct_name) != specific_height_list.end()) {
+                height = specific_height_list[ct_name];
+            } 
+            else {
+                height = config["projection_parameter"]["height"].as<float>();
+            } 
+            gen_AP_drrs_and_masks(single_ct_path, AP_bbox_label_type);  // Replace with actual bbox label type
+            gen_LA_drrs_and_masks(single_ct_path, LA_bbox_label_type);  // Replace with actual bbox label type
+            detection_dataset->to_json(dataset_json_path);
+        }
+
+    }
+}
+
+void GenDetectionDataset::check_sub_folders(const std::vector<std::string>& sub_folder_paths) {
+    for (const auto& sub_folder_path : sub_folder_paths) {
+        std::filesystem::path basename = std::filesystem::path(sub_folder_path).filename();
+        std::filesystem::path nii_path = std::filesystem::path(sub_folder_path) / (basename.string() + ".nii.gz");
+
+        if (!std::filesystem::exists(nii_path)) {
+            throw std::runtime_error("file '" + nii_path.string() + "' not exist");
+        }
+    }
+    std::cout << "check completely!" << std::endl;
+}
+
+
+void GenDetectionDataset::gen_AP_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type) {
+        // Implement your logic here
+}
+
+void GenDetectionDataset::gen_LA_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type) {
+        // Implement your logic here
 }

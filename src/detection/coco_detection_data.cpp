@@ -105,7 +105,7 @@ void COCODetectionData::to_json(const std::string& save_path) {
     save_json_file(coco_data, save_path);
 }
 
-void COCODetectionData::load_json(const std::string& coco_annotations_file) {
+nlohmann::json COCODetectionData::load_json(const std::string& coco_annotations_file) {
     nlohmann::json coco_data = load_json_file(coco_annotations_file);
 
     info = coco_data["info"];
@@ -129,6 +129,7 @@ void COCODetectionData::load_json(const std::string& coco_annotations_file) {
             exist_ct_nii_names["LA"].push_back(ct_name);
         }
     }
+    return info;
 }
 
 std::string COCODetectionData::get_current_date() {

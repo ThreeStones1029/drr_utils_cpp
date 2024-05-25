@@ -24,9 +24,10 @@ public:
 
     void to_json(const std::string& save_path);
 
-    void load_json(const std::string& coco_annotations_file);
+    nlohmann::json load_json(const std::string& coco_annotations_file);
 
     std::string get_current_date();
+    std::unordered_map<std::string, std::vector<std::string>> exist_ct_nii_names;
 
 
 private:
@@ -36,7 +37,7 @@ private:
     std::vector<nlohmann::json> images;
     std::vector<nlohmann::json> categories;
     std::vector<nlohmann::json> annotations;
-    std::unordered_map<std::string, std::vector<std::string>> exist_ct_nii_names;
+    
     std::unordered_map<int, std::string> catid2catname;
     std::unordered_map<std::string, int> catname2catid;
 };

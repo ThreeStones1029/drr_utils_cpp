@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-01 14:09:34
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-23 13:26:50
+ * @LastEditTime: 2024-05-25 14:48:11
  */
 #include <iostream>
 #include <filesystem>
@@ -26,7 +26,7 @@ int main(int argc,char** argv){
          desc.add_options()
                ("help,h", "Using ITK to generate spine DRR detection dataset!")
                ("config,c", boost::program_options::value<std::string>()->default_value("../config/detection_config.yaml"), "Path to the YAML configuration file")
-               ("regenerate_specified_cts,r", boost::program_options::value<bool>()->default_value(true), 
+               ("regenerate_specified_cts,r", boost::program_options::value<bool>()->default_value(false), 
                                                       "The ct name list will be regenerated drrs, if all , then regenerate all from zero");
          boost::program_options::variables_map vm;
          boost::program_options::store(boost::program_options::parse_command_line(argc, argv, desc), vm);
@@ -56,29 +56,8 @@ int main(int argc,char** argv){
       std::cout << "Then Generate from zero." << std::endl;
    }
    
-   GenDetectionDataset dataset(config);
-
-   // DatasetSample dataset;
-
-   // Eigen::MatrixXd rot_range_list(3, 2);
-   // rot_range_list << 60, 120,
-   //                   150, 210,
-   //                   150, 210;
-
-   // Eigen::MatrixXd trans_range_list(3, 2);
-   // trans_range_list << 0, 10,
-   //                   0, 10,
-   //                   0, 10;
-
-   // int num_samples = 1000;
-
-   // auto [rotations, translations] = dataset.generate_uniform_samples_grid(rot_range_list, trans_range_list, num_samples);
-   // dataset.show_3D_resample(rotations);
-
-   // auto [mc_rotations, mc_translations] = dataset.Monte_Carlo_sample_dataset(rot_range_list, trans_range_list, num_samples);
-   // dataset.show_3D_resample(mc_rotations);
-
-        
+   GenDetectionDataset drr_detection_dataset(config);
+   drr_detection_dataset.gen_multple_cts_drrs_and_masks();
 
    return 0;
 }

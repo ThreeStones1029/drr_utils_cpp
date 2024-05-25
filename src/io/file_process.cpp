@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 02:57:42
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 12:57:48
+ * @LastEditTime: 2024-05-25 13:27:54
  */
 #include <iostream>
 #include <fstream>
@@ -116,4 +116,14 @@ nlohmann::json yaml_node_to_nlohmann_json(const YAML::Node& yaml_node) {
     }
 
     return json_node;
+}
+
+std::vector<std::string> get_sub_folder_path(const std::string& root_path) {
+    std::vector<std::string> sub_folders;
+    for (const auto& entry : std::filesystem::directory_iterator(root_path)) {
+        if (entry.is_directory()) {
+            sub_folders.push_back(entry.path().string());
+        }
+    }
+    return sub_folders;
 }

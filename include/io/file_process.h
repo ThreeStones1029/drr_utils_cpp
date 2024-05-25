@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 03:00:34
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 06:25:47
+ * @LastEditTime: 2024-05-25 13:26:39
  */
 #ifndef FILE_PROCESS_H
 #define FILE_PROCESS_H
@@ -29,5 +29,7 @@ nlohmann::json load_json_file(const std::string& file_path);
 void save_json_file(const nlohmann::json& data, const std::string& file_path);
 
 nlohmann::json yaml_node_to_nlohmann_json(const YAML::Node& yaml_node);
+
+std::vector<std::string> get_sub_folder_path(const std::string& root_path);
 
 #endif

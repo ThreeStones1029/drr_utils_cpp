@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:41:10
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 08:52:31
+ * @LastEditTime: 2024-05-25 14:39:38
  */
 #ifndef GENDETECTIONDATASET_H
 #define GENDETECTIONDATASET_H
@@ -22,6 +22,11 @@ public:
     std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> gen_random_pose_parameters(const std::vector<std::vector<int>> rot_range_list, 
                                                                                                               const std::vector<std::vector<int>> trans_range_list, 
                                                                                                               int num_samples);
+    void gen_multple_cts_drrs_and_masks();
+    void check_sub_folders(const std::vector<std::string>& sub_folder_paths);
+    void gen_AP_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type);
+    void gen_LA_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type);
+
 
 private:
     YAML::Node config; 
