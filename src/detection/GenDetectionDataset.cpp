@@ -4,14 +4,13 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-23 14:59:14
+ * @LastEditTime: 2024-05-24 14:38:46
  */
 #include "GenDetectionDataset.h"
 #include "file_process.h"
 #include "local_format.h"
 #include "dataset_sample.h"
-#include <matplotlibcpp.h>
-namespace plt = matplotlibcpp;
+#include "debug_print.h"
 
 
 GenDetectionDataset::GenDetectionDataset(const YAML::Node& config) {
@@ -78,7 +77,6 @@ GenDetectionDataset::GenDetectionDataset(const YAML::Node& config) {
     create_folder(this->dataset_path);
     create_folder(this->dataset_images_path);
     create_folder(this->dataset_masks_path);
-
 }
 
 GenDetectionDataset::~GenDetectionDataset() {
@@ -91,23 +89,6 @@ std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> G
     std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> rotations_and_translations;
     DatasetSample data_rot_and_trans;
     rotations_and_translations = data_rot_and_trans.Monte_Carlo_sample_dataset(rot_range_list,trans_range_list, num_samples);
-    // 准备数据
-    int n = 5000; // 数据点个数
-    std::vector<double> x(n),y(n);
-    for(int i=0; i<n; ++i) {
-        double t = 2*M_PI*i/n;
-        x.at(i) = 16*sin(t)*sin(t)*sin(t);
-        y.at(i) = 13*cos(t) - 5*cos(2*t) - 2*cos(3*t) - cos(4*t);
-    }
-
-    // plot() 函数接受任意数量的 (x, y, format) 三元组
-    // x 必须是可迭代的（即提供 begin(x) 和 end(x) 函数），
-    // y 可以是可调用的（提供 operator() const 函数）或者可迭代的
-    plt::plot(x, y, "r-", x, [](double d) { return 12.5+abs(sin(d)); }, "k-");
-
-    // 显示图表
-    plt::show();
-    // data_rot_and_trans.show_3D_resample(std::get<0>(rotations_and_translations));
+    // rotations_and_translations = data_rot_and_trans.generate_uniform_samples_grid(rot_range_list,trans_range_list, num_samples);
     return rotations_and_translations;
-
 }

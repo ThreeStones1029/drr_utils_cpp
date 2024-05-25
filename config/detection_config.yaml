@@ -1,8 +1,8 @@
-ct_root_path: data/test
+ct_root_path: ../data/test
 dataset_path: ../data/test_drr
-dataset_images_path: data/test_drr/images
-dataset_masks_path: data/test_drr/masks
-dataset_json_path: data/test_drr/detection_data.json
+dataset_images_path: ../data/test_drr/images
+dataset_masks_path: ../data/test_drr/masks
+dataset_json_path: ../data/test_drr/detection_data.json
 
 projection_parameter:
   sdr: 500
@@ -10,8 +10,8 @@ projection_parameter:
   specific_height_list: {}
   delx: 1
   threshold: 0
-  AP_num_samples: 2
-  LA_num_samples: 2
+  AP_num_samples: 216
+  LA_num_samples: 216
   AP_rot_range_list: [[75, 105], [165, 195], [165, 195]]
   AP_trans_range_list: [[-30, 30], [-30, 30], [-30, 30]]
   LA_rot_range_list: [[75, 105], [165, 195], [75, 105]]

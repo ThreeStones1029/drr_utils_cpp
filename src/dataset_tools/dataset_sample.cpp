@@ -80,6 +80,7 @@ std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>>Da
 }
 
 void DatasetSample::show_3D_resample(const std::vector<std::vector<double>>& samples) {
+    /*3D visualize need to be fixed*/
     std::vector<double> x_coords, y_coords, z_coords;
     for (const auto& sample : samples) {
         x_coords.push_back(sample[0]);
