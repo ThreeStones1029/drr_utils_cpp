@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 08:54:02
+ * @LastEditTime: 2024-05-25 13:02:24
  */
 #include "GenDetectionDataset.h"
 #include "coco_detection_data.h"
@@ -12,6 +12,7 @@
 #include "local_format.h"
 #include "dataset_sample.h"
 #include "debug_print.h"
+#include "nlohmann/json.hpp"
 
 
 GenDetectionDataset::GenDetectionDataset(const YAML::Node& config) {
@@ -72,6 +73,7 @@ GenDetectionDataset::GenDetectionDataset(const YAML::Node& config) {
     this->rotations_and_translations["LA_rotations"] = this->LA_rotations;
     this->rotations_and_translations["LA_translations"] = this->LA_translations;
     this->detection_dataset = std::make_unique<COCODetectionData>(config["projection_parameter"], rotations_and_translations); // 使用智能指针
+    detection_dataset->to_json(this->dataset_json_path);
     this->delete_mask = (this->AP_num_samples + this->LA_num_samples >= 2000) ? true : false;
     // create save folder
     create_folder(this->dataset_path);

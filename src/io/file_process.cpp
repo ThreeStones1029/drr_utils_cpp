@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 02:57:42
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 12:33:15
+ * @LastEditTime: 2024-05-25 12:57:48
  */
 #include <iostream>
 #include <fstream>
@@ -90,6 +90,9 @@ void save_json_file(const nlohmann::json& data, const std::string& file_path) {
 
 
 nlohmann::json yaml_node_to_nlohmann_json(const YAML::Node& yaml_node) {
+    /*
+    将yaml node转为 nlohman json格式
+    */
     nlohmann::json json_node;
     switch (yaml_node.Type()) {
         case YAML::NodeType::Null:
@@ -108,8 +111,8 @@ nlohmann::json yaml_node_to_nlohmann_json(const YAML::Node& yaml_node) {
                 json_node[it->first.as<std::string>()] = yaml_node_to_nlohmann_json(it->second);
             }
             break;
-        case YAML::NodeType::Undefined:
-            break;
+        default:
+            throw std::runtime_error("Unknown YAML node type");
     }
 
     return json_node;
