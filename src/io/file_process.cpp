@@ -4,11 +4,13 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 02:57:42
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-23 07:42:53
+ * @LastEditTime: 2024-05-25 11:56:51
  */
 #include <iostream>
+#include <fstream>
 #include "file_process.h"
-#include <yaml-cpp/yaml.h> 
+#include <yaml-cpp/yaml.h>
+#include <nlohmann/json.hpp>
 
 
 void remove_all_files(const std::filesystem::path& dir_path) {
@@ -58,4 +60,58 @@ std::unordered_map<std::string, int> load_map_from_yaml(const YAML::Node& node) 
         map[it->first.as<std::string>()] = it->second.as<int>();
     }
     return map;
+}
+
+
+nlohmann::json load_json_file(const std::string& file_path) {
+    std::ifstream input_file(file_path);
+    nlohmann::json json_data;
+
+    if (input_file.is_open()) {
+        input_file >> json_data;
+        input_file.close();
+    } else {
+        std::cerr << "can not open file: " << file_path << std::endl;
+    }
+
+    return json_data;
+}
+
+void save_json_file(const nlohmann::json& data, const std::string& file_path) {
+    std::ofstream output_file(file_path);
+
+    if (output_file.is_open()) {
+        output_file << data.dump(4); // Pretty print with 4 spaces indentation
+        output_file.close();
+    } else {
+        std::cerr << "can not open file: " << file_path << std::endl;
+    }
+}
+
+
+nlohmann::json yaml_node_to_nlohmann_json(const YAML::Node& yaml_node) {
+    nlohmann::json json_node;
+
+    switch (yaml_node.Type()) {
+        case YAML::NodeType::Null:
+            json_node = nullptr;
+            break;
+        case YAML::NodeType::Scalar:
+            json_node = yaml_node.as<std::string>();
+            break;
+        case YAML::NodeType::Sequence:
+            for (std::size_t i = 0; i < yaml_node.size(); ++i) {
+                json_node.push_back(yaml_node_to_nlohmann_json(yaml_node[i]));
+            }
+            break;
+        case YAML::NodeType::Map:
+            for (YAML::const_iterator it = yaml_node.begin(); it != yaml_node.end(); ++it) {
+                json_node[it->first.as<std::string>()] = yaml_node_to_nlohmann_json(it->second);
+            }
+            break;
+        case YAML::NodeType::Undefined:
+            break;
+    }
+
+    return json_node;
 }

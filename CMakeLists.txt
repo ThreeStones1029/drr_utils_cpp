@@ -22,6 +22,7 @@ set(SOURCES
     src/io/file_process.cpp
     src/io/local_format.cpp
     src/io/debug_print.cpp
+    src/detection/coco_detection_data.cpp
     src/detection/GenDetectionDataset.cpp
     src/dataset_tools/dataset_sample.cpp
     main_drr_detection_dataset.cpp)

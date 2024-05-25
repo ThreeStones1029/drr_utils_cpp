@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-01 14:16:03
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-04-20 02:11:47
+ * @LastEditTime: 2024-05-25 02:18:07
 -->
 <h2 align="center">Deep Learning Spine DRR Toolkit Cpp</h2>
 <p align="center">
@@ -45,5 +45,11 @@ sudo make install
 
 # install boolst
 sudo apt-get install libboost-all-dev
+
+# install matplotlibcpp
+git clone https://github.com/lava/matplotlib-cpp.git
+cd matplotlib-cpp && mkdir build && cd build
+cmake ..
+sudo make install
 ```
 </details>

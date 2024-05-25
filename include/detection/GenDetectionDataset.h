@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:41:10
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-23 13:29:29
+ * @LastEditTime: 2024-05-25 08:52:31
  */
 #ifndef GENDETECTIONDATASET_H
 #define GENDETECTIONDATASET_H
@@ -12,6 +12,7 @@
 #include <yaml-cpp/yaml.h>
 #include <vector>
 #include <string>
+#include <coco_detection_data.h>
 
 
 class GenDetectionDataset {
@@ -51,8 +52,7 @@ private:
     std::vector<std::vector<double>> LA_rotations;
     std::vector<std::vector<double>> LA_translations;
     std::unordered_map<std::string, std::vector<std::vector<double>>> rotations_and_translations;
-    // rotations_and_translations
-    // COCODetectionData* detection_dataset;
+    std::unique_ptr<COCODetectionData> detection_dataset; // 使用智能指针
     bool delete_mask;
 
 
