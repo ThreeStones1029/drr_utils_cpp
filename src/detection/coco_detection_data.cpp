@@ -14,17 +14,6 @@ COCODetectionData::COCODetectionData(const YAML::Node& projection_parameter,
     std::time_t t = std::time(nullptr);
     std::tm* ltm = std::localtime(&t);
 
-    // 定义 projection_parameter 和 rotations_and_translations 示例数据
-    nlohmann::json projection_parameter = {
-        {"param1", "value1"},
-        {"param2", "value2"}
-    };
-
-    nlohmann::json rotations_and_translations = {
-        {"rotation1", {1, 2, 3}},
-        {"translation1", {4, 5, 6}}
-    };
-
     // 定义 info 字典
     nlohmann::json info = {
         {"dataset_info", {
@@ -37,7 +26,7 @@ COCODetectionData::COCODetectionData(const YAML::Node& projection_parameter,
                      std::to_string(1 + ltm->tm_mon) + "-" +
                      std::to_string(ltm->tm_mday)}
         }},
-        {"projection_parameter", projection_parameter},
+        {"projection_parameter", yaml_node_to_nlohmann_json(projection_parameter)},
         {"rotations_and_translations", rotations_and_translations}
     };
 

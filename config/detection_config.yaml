@@ -7,7 +7,7 @@ dataset_json_path: ../data/test_drr/detection_data.json
 projection_parameter:
   sdr: 500
   height: 512
-  specific_height_list: {}
+  specific_height_list: {"luyu": 500, "shuailei": 1000}
   delx: 1
   threshold: 0
   AP_num_samples: 216

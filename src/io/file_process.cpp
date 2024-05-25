@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 02:57:42
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 11:56:51
+ * @LastEditTime: 2024-05-25 12:33:15
  */
 #include <iostream>
 #include <fstream>
@@ -91,20 +91,19 @@ void save_json_file(const nlohmann::json& data, const std::string& file_path) {
 
 nlohmann::json yaml_node_to_nlohmann_json(const YAML::Node& yaml_node) {
     nlohmann::json json_node;
-
     switch (yaml_node.Type()) {
         case YAML::NodeType::Null:
             json_node = nullptr;
             break;
-        case YAML::NodeType::Scalar:
+        case YAML::NodeType::Scalar: //yaml_node 是一个标量（单个值）
             json_node = yaml_node.as<std::string>();
             break;
-        case YAML::NodeType::Sequence:
+        case YAML::NodeType::Sequence: //yaml_node 是一个序列（数组），则遍历该序列的每一个元素，递归调用
             for (std::size_t i = 0; i < yaml_node.size(); ++i) {
                 json_node.push_back(yaml_node_to_nlohmann_json(yaml_node[i]));
             }
             break;
-        case YAML::NodeType::Map:
+        case YAML::NodeType::Map: // yaml_node 是一个映射（键值对），则遍历该映射的每一个键值对，递归调用 yaml_to_json 函数将值转换为 JSON
             for (YAML::const_iterator it = yaml_node.begin(); it != yaml_node.end(); ++it) {
                 json_node[it->first.as<std::string>()] = yaml_node_to_nlohmann_json(it->second);
             }
