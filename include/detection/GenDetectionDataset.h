@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:41:10
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 15:04:32
+ * @LastEditTime: 2024-06-21 14:49:07
  */
 #ifndef GENDETECTIONDATASET_H
 #define GENDETECTIONDATASET_H
@@ -63,9 +63,6 @@ private:
     std::unordered_map<std::string, std::vector<std::vector<double>>> rotations_and_translations;
     std::unique_ptr<COCODetectionData> detection_dataset; // 使用智能指针
     bool delete_mask;
-
-
-
 };
 
 #endif // GENDETECTIONDATASET_H

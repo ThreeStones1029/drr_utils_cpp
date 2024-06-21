@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-01 14:16:03
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 02:18:07
+ * @LastEditTime: 2024-06-21 14:45:07
 -->
 <h2 align="center">Deep Learning Spine DRR Toolkit Cpp</h2>
 <p align="center">
@@ -52,4 +52,19 @@ cd matplotlib-cpp && mkdir build && cd build
 cmake ..
 sudo make install
 ```
+</details>
+
+<details>
+<summary>Run</summary>
+
+```bash
+cd build
+cmake ..
+make
+# if regenerate from zero just ran the follow command
+./main_drr_detection_dataset -r true 
+# generating data from where you left off
+./main_drr_detection_dataset
+```
+
 </details>

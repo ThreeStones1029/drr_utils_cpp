@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 15:07:22
+ * @LastEditTime: 2024-06-21 14:29:31
  */
 #include "GenDetectionDataset.h"
 #include "coco_detection_data.h"
@@ -125,7 +125,6 @@ void GenDetectionDataset::gen_multple_cts_drrs_and_masks() {
             gen_LA_drrs_and_masks(single_ct_path, LA_bbox_label_type);  // Replace with actual bbox label type
             detection_dataset->to_json(dataset_json_path);
         }
-
     }
 }
 
@@ -144,46 +143,46 @@ void GenDetectionDataset::check_sub_folders(const std::vector<std::string>& sub_
 
 void GenDetectionDataset::gen_drr(const std::string& ct_name, int i, const std::vector<double>& rotation,
                                   const std::vector<double>& translation, const std::string& filepath, const std::string& view) {
-        // 实现生成DRR的逻辑
+    // 实现生成DRR的逻辑
 }
 
 void GenDetectionDataset::gen_mask(const std::string& basename_wo_ext, const std::string& ct_name, int i,
                                    const std::vector<double>& rotation, const std::vector<double>& translation,
                                    const std::string& filepath, const std::string& view) {
-        // 实现生成mask的逻辑
+    // 实现生成mask的逻辑
 }
 
 
 void GenDetectionDataset::gen_AP_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type) {
     // 获取CT名称
-        std::string ct_name = std::filesystem::path(ct_path).filename().string();
-        std::string ct_filepath = std::filesystem::path(ct_path) / (ct_name + ".nii.gz");
-        std::vector<std::string> filepaths = glob(join(ct_path, "*seg.nii.gz"));
+        // std::string ct_name = std::filesystem::path(ct_path).filename().string();
+        // std::string ct_filepath = std::filesystem::path(ct_path) / (ct_name + ".nii.gz");
+        // std::vector<std::string> filepaths = glob(join(ct_path, "*seg.nii.gz"));
 
-        // 将原CT放到路径开头
-        filepaths.insert(filepaths.begin(), ct_filepath);
+        // // 将原CT放到路径开头
+        // filepaths.insert(filepaths.begin(), ct_filepath);
         
-        int i = 0;
-        for (size_t idx = 0; idx < AP_rotations.size(); ++idx) {
-            i++;
-            const auto& rotation = AP_rotations[idx];
-            const auto& translation = AP_translations[idx];
-            for (const auto& filepath : filepaths) {
-                std::string basename = std::filesystem::path(filepath).filename().string();
-                std::string basename_wo_ext = basename.substr(0, basename.find(".nii.gz"));
+        // int i = 0;
+        // for (size_t idx = 0; idx < AP_rotations.size(); ++idx) {
+        //     i++;
+        //     const auto& rotation = AP_rotations[idx];
+        //     const auto& translation = AP_translations[idx];
+        //     for (const auto& filepath : filepaths) {
+        //         std::string basename = std::filesystem::path(filepath).filename().string();
+        //         std::string basename_wo_ext = basename.substr(0, basename.find(".nii.gz"));
 
-                if (basename_wo_ext.find("seg") == std::string::npos) {
-                    gen_drr(ct_name, i, rotation, translation, filepath, "AP");
-                }
-                if (AP_bbox_label_type == "small" && basename_wo_ext.find("body_seg") != std::string::npos) {
-                    gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
-                }
-                if (AP_bbox_label_type == "big" && basename_wo_ext.find("seg") != std::string::npos &&
-                    std::count(basename_wo_ext.begin(), basename_wo_ext.end(), '_') == 1) {
-                    gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
-                }
-            }
-        }
+        //         if (basename_wo_ext.find("seg") == std::string::npos) {
+        //             gen_drr(ct_name, i, rotation, translation, filepath, "AP");
+        //         }
+        //         if (AP_bbox_label_type == "small" && basename_wo_ext.find("body_seg") != std::string::npos) {
+        //             gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
+        //         }
+        //         if (AP_bbox_label_type == "big" && basename_wo_ext.find("seg") != std::string::npos &&
+        //             std::count(basename_wo_ext.begin(), basename_wo_ext.end(), '_') == 1) {
+        //             gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
+        //         }
+        //     }
+        // }
 }
 
 void GenDetectionDataset::gen_LA_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type) {

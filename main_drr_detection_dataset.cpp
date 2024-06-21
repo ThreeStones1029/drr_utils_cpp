@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-01 14:09:34
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 14:48:11
+ * @LastEditTime: 2024-06-21 14:48:03
  */
 #include <iostream>
 #include <filesystem>
@@ -58,6 +58,5 @@ int main(int argc,char** argv){
    
    GenDetectionDataset drr_detection_dataset(config);
    drr_detection_dataset.gen_multple_cts_drrs_and_masks();
-
    return 0;
 }

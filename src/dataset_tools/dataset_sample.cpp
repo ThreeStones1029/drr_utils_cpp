@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 14:32:34
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-23 14:24:05
+ * @LastEditTime: 2024-06-21 14:33:03
  */
 #include "dataset_sample.h"
 #include <iostream>
@@ -16,6 +16,7 @@ namespace plt = matplotlibcpp;
 
 DatasetSample::DatasetSample() {}
 
+// Sample uniformly according to the grid
 std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> DatasetSample::generate_uniform_samples_grid(
     const std::vector<std::vector<int>>& rot_range_list,
     const std::vector<std::vector<int>>& trans_range_list,
@@ -50,6 +51,7 @@ std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> D
     return rotations_and_translations;
 }
 
+// Monte Carlo random sampling
 std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>>DatasetSample::Monte_Carlo_sample_dataset(
     const std::vector<std::vector<int>>& rot_range_list,
     const std::vector<std::vector<int>>& trans_range_list,

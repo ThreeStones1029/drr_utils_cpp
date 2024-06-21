@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 02:57:42
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 14:58:41
+ * @LastEditTime: 2024-06-21 15:00:27
  */
 #include <iostream>
 #include <fstream>
@@ -15,6 +15,11 @@
 #include <filesystem>
 
 void remove_all_files(const std::filesystem::path& dir_path) {
+    /**
+     * @brief create folder.
+     * @param dir_path 
+     * @return
+     */
     for (const auto& entry : std::filesystem::directory_iterator(dir_path)) {
         if (std::filesystem::is_directory(entry)) {
             remove_all_files(entry.path()); // 递归删除子文件夹中的文件和文件夹
@@ -26,6 +31,11 @@ void remove_all_files(const std::filesystem::path& dir_path) {
 }
 
 void create_folder(const std::string& path) {
+    /**
+     * @brief create folder.
+     * @param path 
+     * @return
+     */
     try {
         std::filesystem::create_directory(path);
         std::cout << "Folder created: " << path << std::endl;
