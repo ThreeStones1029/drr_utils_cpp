@@ -129,7 +129,7 @@ nlohmann::json COCODetectionData::load_json(const std::string& coco_annotations_
             exist_ct_nii_names["LA"].push_back(ct_name);
         }
     }
-    return info;
+    return coco_data;
 }
 
 std::string COCODetectionData::get_current_date() {

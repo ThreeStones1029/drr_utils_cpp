@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 02:57:42
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-06-21 15:00:27
+ * @LastEditTime: 2024-06-22 03:09:59
  */
 #include <iostream>
 #include <fstream>
@@ -14,12 +14,13 @@
 #include <regex>
 #include <filesystem>
 
+
+/**
+ * @brief create folder.
+ * @param dir_path root folder.                                      
+ * @return
+ */
 void remove_all_files(const std::filesystem::path& dir_path) {
-    /**
-     * @brief create folder.
-     * @param dir_path 
-     * @return
-     */
     for (const auto& entry : std::filesystem::directory_iterator(dir_path)) {
         if (std::filesystem::is_directory(entry)) {
             remove_all_files(entry.path()); // 递归删除子文件夹中的文件和文件夹
@@ -30,12 +31,12 @@ void remove_all_files(const std::filesystem::path& dir_path) {
     }
 }
 
+/**
+ * @brief create folder.
+ * @param path 
+ * @return
+ */
 void create_folder(const std::string& path) {
-    /**
-     * @brief create folder.
-     * @param path 
-     * @return
-     */
     try {
         std::filesystem::create_directory(path);
         std::cout << "Folder created: " << path << std::endl;
@@ -44,7 +45,11 @@ void create_folder(const std::string& path) {
     }
 }
 
-
+/**
+ * @brief load two dimensional array.
+ * @param node 
+ * @return two dimensional array.
+ */
 std::vector<std::vector<int>> load_two_dimensional_array_from_yaml(const YAML::Node& node) {
     /*从yaml文件中读取二维数组*/
     std::vector<std::vector<int>> two_dimensional_array;
@@ -58,7 +63,7 @@ std::vector<std::vector<int>> load_two_dimensional_array_from_yaml(const YAML::N
             two_dimensional_array.push_back(range);
         }
     } else {
-        std::cerr << "AP_rot_range_list not found in config file." << std::endl;
+        std::cerr << "node not found in config file." << std::endl;
     }
     return two_dimensional_array;
 }
@@ -129,7 +134,7 @@ nlohmann::json yaml_node_to_nlohmann_json(const YAML::Node& yaml_node) {
     return json_node;
 }
 
-std::vector<std::string> get_sub_folder_path(const std::string& root_path) {
+std::vector<std::string> getSubFolderPaths(const std::string& root_path) {
     std::vector<std::string> sub_folders;
     for (const auto& entry : std::filesystem::directory_iterator(root_path)) {
         if (entry.is_directory()) {
@@ -140,23 +145,55 @@ std::vector<std::string> get_sub_folder_path(const std::string& root_path) {
 }
 
 
-std::vector<std::string> glob(const std::string& pattern) {
-    std::vector<std::string> matches;
-    std::string directory = std::filesystem::path(pattern).parent_path().string();
-    std::string filename_pattern = std::filesystem::path(pattern).filename().string();
-
-    std::regex regex_pattern(
-        std::regex_replace(
-            std::regex_replace(filename_pattern, std::regex(R"(\.)"), R"(\.)"),
-            std::regex(R"(\*)"), R"(.*)"
-        )
-    );
-
-    for (const auto& entry : std::filesystem::directory_iterator(directory)) {
-        if (std::regex_match(entry.path().filename().string(), regex_pattern)) {
-            matches.push_back(entry.path().string());
+std::vector<std::string> getFilesWithExtension(const std::string& folderPath, const std::string& extension) {
+    std::vector<std::string>  files;
+    // 遍历指定目录下的所有文件和子目录
+    for (const auto& entry : std::filesystem::directory_iterator(folderPath)) {
+        if (entry.is_regular_file() && entry.path().extension() == extension) {
+            // 如果是文件且后缀匹配，则将其路径添加到结果向量中
+            files.push_back(entry.path().string());
         }
     }
+    return files;
+}
 
-    return matches;
+
+std::vector<std::string> getFilesWithEnding(const std::string& folderPath, const std::string& ending) {
+    std::vector<std::string> files;
+    // 遍历指定目录下的所有文件和子目录
+    for (const auto& entry : std::filesystem::directory_iterator(folderPath)) {
+        if (entry.is_regular_file()) {
+            std::string filename = entry.path().filename().string();
+            // 检查文件名是否以指定字符串结尾
+            if (filename.size() >= ending.size() && filename.compare(filename.size() - ending.size(), ending.size(), ending) == 0) {
+                // 如果匹配，则将其路径添加到结果向量中
+                files.push_back(entry.path().string());
+            }
+        }
+    }
+    return files;
+}
+
+
+std::vector<std::string> getFilteredFiles(const std::string& folderPath, const std::string& includeEnding, const std::string& excludeEnding) {
+    std::vector<std::string> files;
+    
+    // 遍历指定目录下的所有文件和子目录
+    for (const auto& entry : std::filesystem::directory_iterator(folderPath)) {
+        if (entry.is_regular_file()) {
+            std::string filename = entry.path().filename().string();
+            // 检查文件名是否以包含字符串结尾
+            if (filename.size() >= includeEnding.size() && 
+                filename.compare(filename.size() - includeEnding.size(), includeEnding.size(), includeEnding) == 0) {
+                // 如果需要排除特定结尾的文件
+                if (!excludeEnding.empty() && filename.size() >= excludeEnding.size() &&
+                    filename.compare(filename.size() - excludeEnding.size(), excludeEnding.size(), excludeEnding) == 0) {
+                    continue; // 跳过匹配排除字符串的文件
+                }
+                // 如果匹配，则将其路径添加到结果向量中
+                files.push_back(entry.path().string());
+            }
+        }
+    }
+    return files;
 }

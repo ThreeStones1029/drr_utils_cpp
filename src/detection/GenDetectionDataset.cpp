@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-06-21 14:29:31
+ * @LastEditTime: 2024-06-22 03:11:53
  */
 #include "GenDetectionDataset.h"
 #include "coco_detection_data.h"
@@ -98,15 +98,15 @@ std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> G
 
 void GenDetectionDataset::gen_multple_cts_drrs_and_masks() {
     auto total_start_time = std::chrono::high_resolution_clock::now();
-    std::vector<std::string> ct_path_list = get_sub_folder_path(ct_root_path);
+    std::vector<std::string> ct_path_list = getSubFolderPaths(ct_root_path);
     for (const auto& single_ct_path : ct_path_list) {
         std::string ct_name = std::filesystem::path(single_ct_path).filename().string();
         if (std::filesystem::exists(dataset_json_path)) {
-            nlohmann::json info = detection_dataset->load_json(dataset_json_path);
-            AP_rotations = info["rotations_and_translations"]["AP_rotations"];
-            AP_translations = info["rotations_and_translations"]["AP_translations"];
-            LA_rotations = info["rotations_and_translations"]["LA_rotations"];
-            LA_translations = info["rotations_and_translations"]["LA_translations"];
+            nlohmann::json coco_data = detection_dataset->load_json(dataset_json_path);
+            AP_rotations = coco_data["info"]["rotations_and_translations"]["AP_rotations"];
+            AP_translations = coco_data["info"]["rotations_and_translations"]["AP_translations"];
+            LA_rotations = coco_data["info"]["rotations_and_translations"]["LA_rotations"];
+            LA_translations = coco_data["info"]["rotations_and_translations"]["LA_translations"];
         }
         /*------------------------------------------------------------------------------------------------------------------- 
         # Note if you want regenerate completely,just add "-r all", Otherwise, it will automatically read the existing json 
@@ -155,34 +155,42 @@ void GenDetectionDataset::gen_mask(const std::string& basename_wo_ext, const std
 
 void GenDetectionDataset::gen_AP_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type) {
     // 获取CT名称
-        // std::string ct_name = std::filesystem::path(ct_path).filename().string();
-        // std::string ct_filepath = std::filesystem::path(ct_path) / (ct_name + ".nii.gz");
-        // std::vector<std::string> filepaths = glob(join(ct_path, "*seg.nii.gz"));
+    std::string ct_name = std::filesystem::path(ct_path).filename().string();
+    std::string ct_filepath = std::filesystem::path(ct_path) / (ct_name + ".nii.gz");
+    // if AP_bbox_label_type is small, it will generate small bbox only according vertebrae body.
+    if (AP_bbox_label_type == "small")
+        std::vector<std::string> seg_filepaths = getFilesWithEnding(ct_path, "body_seg.nii.gz");
+    // if AP_bbox_label_type is big, it will generate big bbox according overall vertebrae.
+    if (AP_bbox_label_type == "big")
+        std::vector<std::string> seg_filepaths = getFilesWithEnding(ct_path, "seg.nii.gz");
+    // 将原CT放到路径开头
 
-        // // 将原CT放到路径开头
-        // filepaths.insert(filepaths.begin(), ct_filepath);
-        
-        // int i = 0;
-        // for (size_t idx = 0; idx < AP_rotations.size(); ++idx) {
-        //     i++;
-        //     const auto& rotation = AP_rotations[idx];
-        //     const auto& translation = AP_translations[idx];
-        //     for (const auto& filepath : filepaths) {
-        //         std::string basename = std::filesystem::path(filepath).filename().string();
-        //         std::string basename_wo_ext = basename.substr(0, basename.find(".nii.gz"));
+    // 同时传入所有seg_filepaths,以及角度到生成drr的函数，返回所有框的坐标
+    // ToDo：后续可改为只用读取一个seg文件，这样节省读取nii.gz文件的时间
+    // gen_drrs(ct_filepath, AP_rotations, save_img=True);
+    // gen_masks(seg_filepaths, AP_rotations, save_img=False);
 
-        //         if (basename_wo_ext.find("seg") == std::string::npos) {
-        //             gen_drr(ct_name, i, rotation, translation, filepath, "AP");
-        //         }
-        //         if (AP_bbox_label_type == "small" && basename_wo_ext.find("body_seg") != std::string::npos) {
-        //             gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
-        //         }
-        //         if (AP_bbox_label_type == "big" && basename_wo_ext.find("seg") != std::string::npos &&
-        //             std::count(basename_wo_ext.begin(), basename_wo_ext.end(), '_') == 1) {
-        //             gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
-        //         }
-        //     }
-        // }
+    // int i = 0;
+    // for (size_t idx = 0; idx < AP_rotations.size(); ++idx) {
+    //     i++;
+    //     const auto& rotation = AP_rotations[idx];
+    //     const auto& translation = AP_translations[idx];
+    //     for (const auto& filepath : filepaths) {
+    //         std::string basename = std::filesystem::path(filepath).filename().string();
+    //         std::string basename_wo_ext = basename.substr(0, basename.find(".nii.gz"));
+
+    //         if (basename_wo_ext.find("seg") == std::string::npos) {
+    //             gen_drr(ct_name, i, rotation, translation, filepath, "AP");
+    //         }
+    //         if (AP_bbox_label_type == "small" && basename_wo_ext.find("body_seg") != std::string::npos) {
+    //             gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
+    //         }
+    //         if (AP_bbox_label_type == "big" && basename_wo_ext.find("seg") != std::string::npos &&
+    //             std::count(basename_wo_ext.begin(), basename_wo_ext.end(), '_') == 1) {
+    //             gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
+    //         }
+    //     }
+    // }
 }
 
 void GenDetectionDataset::gen_LA_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type) {

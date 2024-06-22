@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 03:00:34
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-05-25 14:59:49
+ * @LastEditTime: 2024-06-22 03:10:20
  */
 #ifndef FILE_PROCESS_H
 #define FILE_PROCESS_H
@@ -30,8 +30,12 @@ void save_json_file(const nlohmann::json& data, const std::string& file_path);
 
 nlohmann::json yaml_node_to_nlohmann_json(const YAML::Node& yaml_node);
 
-std::vector<std::string> get_sub_folder_path(const std::string& root_path);
+std::vector<std::string> getSubFolderPaths(const std::string& root_path);
 
-std::vector<std::string> glob(const std::string& pattern);
+std::vector<std::string> getFilesWithExtension(const std::string& folderPath, const std::string& extension);
+
+std::vector<std::string> getFilesWithEnding(const std::string& folderPath, const std::string& ending);
+
+std::vector<std::string> getFilteredFiles(const std::string& folderPath, const std::string& includeEnding, const std::string& excludeEnding);
 
 #endif
