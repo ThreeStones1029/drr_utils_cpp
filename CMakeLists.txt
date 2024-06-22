@@ -4,7 +4,7 @@ project(drr_utils_cpp)
 # 设置编译标准
 set(CMAKE_CXX_STANDARD 17)
 
-# 查找 yaml boost matplotlib库
+# 查找 yaml boost matplotlib ITK库
 find_package(yaml-cpp REQUIRED)
 find_package(Boost COMPONENTS program_options REQUIRED)
 find_package(PythonLibs REQUIRED)
@@ -32,5 +32,5 @@ set(SOURCES
 
 add_executable(main_drr_detection_dataset ${SOURCES})
 
-# 链接 yaml Boost库
+# 链接 yaml Boost ITK库
 target_link_libraries(main_drr_detection_dataset yaml-cpp::yaml-cpp ${Boost_LIBRARIES} ${PYTHON_LIBRARIES} ${ITK_LIBRARIES})

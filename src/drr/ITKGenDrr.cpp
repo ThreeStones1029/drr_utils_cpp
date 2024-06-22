@@ -19,6 +19,7 @@
 #include <itkNiftiImageIOFactory.h>
 #include <itkMetaImageIOFactory.h>
 #include <itkRayCastInterpolateImageFunction.h>
+#include "coco_detection_data.h"
 #include <iostream>
 #include <filesystem>
 #include <sys/io.h>
@@ -26,7 +27,8 @@
 
 int GenerateDrrs(const std::string& ct_file_path, const std::vector<std::vector<double>>& rotations, 
                   const std::vector<std::vector<double>>& translations, bool save_img, double sid_value, 
-                  double sx_value, double sy_value, int dx_value, int dy_value, double threshold_value, const std::string& APorLA, const std::string& save_images_folder) {
+                  double sx_value, double sy_value, int dx_value, int dy_value, double threshold_value, 
+				  const std::string& APorLA, const std::string& save_images_folder, const std::unique_ptr<COCODetectionData>& detection_dataset) {
 
 	// 旋转中心的坐标
 	double cx = 0.0;
@@ -125,7 +127,10 @@ int GenerateDrrs(const std::string& ct_file_path, const std::vector<std::vector<
 	std::string ct_name_with_nii = std::filesystem::path(ct_file_path).stem().string();
 	std::string ct_name = std::filesystem::path(ct_name_with_nii).stem().string();
 	for (int i = 0; i < rotations.size(); i++) {
-		std::string save_path = save_images_folder + "/" + ct_name + "_" + APorLA + "_" + std::to_string(i + 1) + ".png";
+		std::string image_name = ct_name + "_" + APorLA + "_" + std::to_string(i + 1) + ".png";
+		std::string save_path = save_images_folder + "/" + image_name;
+		// 添加标注
+		detection_dataset->add_image(image_name, ct_name_with_nii, APorLA, dx, dy, rotations[i], translations[i]);
 		double rx = rotations[i][0];
 		double ry = rotations[i][1];
 		double rz = rotations[i][2];
@@ -258,5 +263,13 @@ int GenerateDrrs(const std::string& ct_file_path, const std::vector<std::vector<
 			std::cerr << err << std::endl;
 		}
 	}
+	return 0;
+}
+
+
+int GenerateMasks(const std::vector<std::string>& seg_filepaths, const std::vector<std::vector<double>>& rotations, 
+                 const std::vector<std::vector<double>>& translations, bool save_img, double sid_value, 
+                 double sx_value, double sy_value, int dx_value, int dy_value, double threshold_value, 
+                 const std::string& APorLA, const std::string& save_images_folder) {
 	return 0;
 }

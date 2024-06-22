@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-06-22 08:31:32
+ * @LastEditTime: 2024-06-22 11:40:55
  */
 #include "GenDetectionDataset.h"
 #include "coco_detection_data.h"
@@ -122,8 +122,7 @@ void GenDetectionDataset::gen_multple_cts_drrs_and_masks() {
             else {
                 height = config["projection_parameter"]["height"].as<float>();
             } 
-            gen_AP_drrs_and_masks(single_ct_path, AP_bbox_label_type);  // Replace with actual bbox label type
-            gen_LA_drrs_and_masks(single_ct_path, LA_bbox_label_type);  // Replace with actual bbox label type
+            gen_drrs_and_masks(single_ct_path);  // Replace with actual bbox label type
             detection_dataset->to_json(dataset_json_path);
         }
     }
@@ -142,19 +141,7 @@ void GenDetectionDataset::check_sub_folders(const std::vector<std::string>& sub_
 }
 
 
-void GenDetectionDataset::gen_drr(const std::string& ct_name, int i, const std::vector<double>& rotation,
-                                  const std::vector<double>& translation, const std::string& filepath, const std::string& view) {
-    // 实现生成DRR的逻辑
-}
-
-void GenDetectionDataset::gen_mask(const std::string& basename_wo_ext, const std::string& ct_name, int i,
-                                   const std::vector<double>& rotation, const std::vector<double>& translation,
-                                   const std::string& filepath, const std::string& view) {
-    // 实现生成mask的逻辑
-}
-
-
-void GenDetectionDataset::gen_AP_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type) {
+void GenDetectionDataset::gen_drrs_and_masks(const std::string& ct_path) {
     // 获取CT名称
     std::string ct_name = std::filesystem::path(ct_path).filename().string();
     std::string ct_filepath = std::filesystem::path(ct_path) / (ct_name + ".nii.gz");
@@ -165,39 +152,7 @@ void GenDetectionDataset::gen_AP_drrs_and_masks(const std::string& ct_path, cons
     // if AP_bbox_label_type is big, it will generate big bbox according overall vertebrae.
     if (AP_bbox_label_type == "big")
         seg_filepaths = getFilteredFiles(ct_path, "seg.nii.gz", "body_seg.nii.gz");
-    // for (int i = 0; i < seg_filepaths.size(); i++) {
-    //     std::cout << seg_filepaths[i] << std::endl;
-    // }
     // 同时传入所有seg_filepaths,以及角度到生成drr的函数，返回所有框的坐标
-    // ToDo：后续可改为只用读取一个seg文件，这样节省读取nii.gz文件的时间
-    GenerateDrrs(ct_filepath, AP_rotations, AP_translations, true, sdr*2, delx, delx, height, height, threshold, "AP", dataset_images_path);
-    GenerateDrrs(ct_filepath, LA_rotations, LA_translations, true, sdr*2, delx, delx, height, height, threshold, "LA", dataset_images_path);
-    
-    // gen_masks(seg_filepaths, AP_rotations, AP_translations, false);
-
-    // int i = 0;
-    // for (size_t idx = 0; idx < AP_rotations.size(); ++idx) {
-    //     i++;
-    //     const auto& rotation = AP_rotations[idx];
-    //     const auto& translation = AP_translations[idx];
-    //     for (const auto& filepath : filepaths) {
-    //         std::string basename = std::filesystem::path(filepath).filename().string();
-    //         std::string basename_wo_ext = basename.substr(0, basename.find(".nii.gz"));
-
-    //         if (basename_wo_ext.find("seg") == std::string::npos) {
-    //             gen_drr(ct_name, i, rotation, translation, filepath, "AP");
-    //         }
-    //         if (AP_bbox_label_type == "small" && basename_wo_ext.find("body_seg") != std::string::npos) {
-    //             gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
-    //         }
-    //         if (AP_bbox_label_type == "big" && basename_wo_ext.find("seg") != std::string::npos &&
-    //             std::count(basename_wo_ext.begin(), basename_wo_ext.end(), '_') == 1) {
-    //             gen_mask(basename_wo_ext, ct_name, i, rotation, translation, filepath, "AP");
-    //         }
-    //     }
-    // }
-}
-
-void GenDetectionDataset::gen_LA_drrs_and_masks(const std::string& ct_path, const std::string& bbox_label_type) {
-        // Implement your logic here
+    GenerateDrrs(ct_filepath, AP_rotations, AP_translations, true, sdr*2, delx, delx, height, height, threshold, "AP", dataset_images_path, detection_dataset);
+    GenerateDrrs(ct_filepath, LA_rotations, LA_translations, true, sdr*2, delx, delx, height, height, threshold, "LA", dataset_images_path, detection_dataset);
 }
