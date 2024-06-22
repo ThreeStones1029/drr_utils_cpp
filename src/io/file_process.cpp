@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 02:57:42
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-06-22 08:20:52
+ * @LastEditTime: 2024-06-22 13:07:45
  */
 #include <iostream>
 #include <fstream>
@@ -195,4 +195,15 @@ std::vector<std::string> getFilteredFiles(const std::string& folderPath, const s
         }
     }
     return files;
+}
+
+
+std::vector<std::string> splitString(const std::string& str, char delimiter) {
+    std::vector<std::string> result;
+    std::istringstream ss(str);
+    std::string part;
+    while (std::getline(ss, part, delimiter)) {
+        result.push_back(part);
+    }
+    return result;
 }

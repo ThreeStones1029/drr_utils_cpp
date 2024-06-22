@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 03:00:34
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-06-22 08:23:25
+ * @LastEditTime: 2024-06-22 13:08:17
  */
 #ifndef FILE_PROCESS_H
 #define FILE_PROCESS_H
@@ -38,4 +38,5 @@ std::vector<std::string> getFilesWithEnding(const std::string& folderPath, const
 
 std::vector<std::string> getFilteredFiles(const std::string& folderPath, const std::string& includeEnding, const std::string& excludeEnding);
 
+std::vector<std::string> splitString(const std::string& str, char delimiter);
 #endif
