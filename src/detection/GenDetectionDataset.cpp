@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-06-22 11:40:55
+ * @LastEditTime: 2024-06-22 12:06:36
  */
 #include "GenDetectionDataset.h"
 #include "coco_detection_data.h"
@@ -152,7 +152,9 @@ void GenDetectionDataset::gen_drrs_and_masks(const std::string& ct_path) {
     // if AP_bbox_label_type is big, it will generate big bbox according overall vertebrae.
     if (AP_bbox_label_type == "big")
         seg_filepaths = getFilteredFiles(ct_path, "seg.nii.gz", "body_seg.nii.gz");
-    // 同时传入所有seg_filepaths,以及角度到生成drr的函数，返回所有框的坐标
+    // 同时传入所有seg_filepaths
     GenerateDrrs(ct_filepath, AP_rotations, AP_translations, true, sdr*2, delx, delx, height, height, threshold, "AP", dataset_images_path, detection_dataset);
+    GenerateMasks(seg_filepaths, AP_rotations, AP_translations, false, sdr*2, delx, delx, height, height, threshold, "AP", dataset_masks_path, detection_dataset);
     GenerateDrrs(ct_filepath, LA_rotations, LA_translations, true, sdr*2, delx, delx, height, height, threshold, "LA", dataset_images_path, detection_dataset);
+    GenerateMasks(seg_filepaths, LA_rotations, LA_translations, false, sdr*2, delx, delx, height, height, threshold, "LA", dataset_masks_path, detection_dataset);
 }
