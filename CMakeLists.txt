@@ -8,14 +8,16 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(yaml-cpp REQUIRED)
 find_package(Boost COMPONENTS program_options REQUIRED)
 find_package(PythonLibs REQUIRED)
+find_package(ITK REQUIRED)
 include_directories(${YAML_CPP_INCLUDE_DIR})
 include_directories(${Boost_INCLUDE_DIRS})
 include_directories(${PYTHON_INCLUDE_DIRS})
-
+include_directories(${ITK_INCLUDE_DIRS})
 # 添加头文件目录
 include_directories(include/io)
 include_directories(include/detection)
 include_directories(include/dataset_tools)
+include_directories(include/drr)
 
 # 源文件列表
 set(SOURCES 
@@ -25,9 +27,10 @@ set(SOURCES
     src/detection/coco_detection_data.cpp
     src/detection/GenDetectionDataset.cpp
     src/dataset_tools/dataset_sample.cpp
+    src/drr/ITKGenDrr.cpp
     main_drr_detection_dataset.cpp)
 
 add_executable(main_drr_detection_dataset ${SOURCES})
 
 # 链接 yaml Boost库
-target_link_libraries(main_drr_detection_dataset yaml-cpp::yaml-cpp ${Boost_LIBRARIES} ${PYTHON_LIBRARIES})
+target_link_libraries(main_drr_detection_dataset yaml-cpp::yaml-cpp ${Boost_LIBRARIES} ${PYTHON_LIBRARIES} ${ITK_LIBRARIES})

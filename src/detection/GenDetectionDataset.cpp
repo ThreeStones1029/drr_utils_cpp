@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-06-22 03:11:53
+ * @LastEditTime: 2024-06-22 08:31:32
  */
 #include "GenDetectionDataset.h"
 #include "coco_detection_data.h"
@@ -14,6 +14,7 @@
 #include "debug_print.h"
 #include "nlohmann/json.hpp"
 #include <iostream>
+#include "ITKGenDrr.h"
 
 
 GenDetectionDataset::GenDetectionDataset(const YAML::Node& config) {
@@ -158,17 +159,21 @@ void GenDetectionDataset::gen_AP_drrs_and_masks(const std::string& ct_path, cons
     std::string ct_name = std::filesystem::path(ct_path).filename().string();
     std::string ct_filepath = std::filesystem::path(ct_path) / (ct_name + ".nii.gz");
     // if AP_bbox_label_type is small, it will generate small bbox only according vertebrae body.
+    std::vector<std::string> seg_filepaths;
     if (AP_bbox_label_type == "small")
-        std::vector<std::string> seg_filepaths = getFilesWithEnding(ct_path, "body_seg.nii.gz");
+        seg_filepaths = getFilesWithEnding(ct_path, "body_seg.nii.gz");
     // if AP_bbox_label_type is big, it will generate big bbox according overall vertebrae.
     if (AP_bbox_label_type == "big")
-        std::vector<std::string> seg_filepaths = getFilesWithEnding(ct_path, "seg.nii.gz");
-    // 将原CT放到路径开头
-
+        seg_filepaths = getFilteredFiles(ct_path, "seg.nii.gz", "body_seg.nii.gz");
+    // for (int i = 0; i < seg_filepaths.size(); i++) {
+    //     std::cout << seg_filepaths[i] << std::endl;
+    // }
     // 同时传入所有seg_filepaths,以及角度到生成drr的函数，返回所有框的坐标
     // ToDo：后续可改为只用读取一个seg文件，这样节省读取nii.gz文件的时间
-    // gen_drrs(ct_filepath, AP_rotations, save_img=True);
-    // gen_masks(seg_filepaths, AP_rotations, save_img=False);
+    GenerateDrrs(ct_filepath, AP_rotations, AP_translations, true, sdr*2, delx, delx, height, height, threshold, "AP", dataset_images_path);
+    GenerateDrrs(ct_filepath, LA_rotations, LA_translations, true, sdr*2, delx, delx, height, height, threshold, "LA", dataset_images_path);
+    
+    // gen_masks(seg_filepaths, AP_rotations, AP_translations, false);
 
     // int i = 0;
     // for (size_t idx = 0; idx < AP_rotations.size(); ++idx) {

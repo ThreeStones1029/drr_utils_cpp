@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 02:57:42
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-06-22 03:09:59
+ * @LastEditTime: 2024-06-22 08:20:52
  */
 #include <iostream>
 #include <fstream>
@@ -177,7 +177,6 @@ std::vector<std::string> getFilesWithEnding(const std::string& folderPath, const
 
 std::vector<std::string> getFilteredFiles(const std::string& folderPath, const std::string& includeEnding, const std::string& excludeEnding) {
     std::vector<std::string> files;
-    
     // 遍历指定目录下的所有文件和子目录
     for (const auto& entry : std::filesystem::directory_iterator(folderPath)) {
         if (entry.is_regular_file()) {
