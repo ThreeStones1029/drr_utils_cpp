@@ -22,8 +22,8 @@ include_directories(include/drr)
 # 源文件列表
 set(SOURCES 
     src/io/file_process.cpp
-    src/io/local_format.cpp
     src/io/debug_print.cpp
+    src/io/image_process.cpp
     src/detection/coco_detection_data.cpp
     src/detection/GenDetectionDataset.cpp
     src/dataset_tools/dataset_sample.cpp

@@ -21,6 +21,7 @@
 #include <itkRayCastInterpolateImageFunction.h>
 #include "coco_detection_data.h"
 #include "file_process.h"
+#include "image_process.h"
 #include <iostream>
 #include <filesystem>
 #include <sys/io.h>
@@ -364,31 +365,41 @@ int GenerateMasks(const std::string& ct_name, const std::vector<std::string>& se
 			filter->SetOutputOrigin(origin);
 			
 			// create writer
-			using RescaleFilterType = itk::RescaleIntensityImageFilter<InputImageType, OutputImageType>;
-			RescaleFilterType::Pointer rescaler = RescaleFilterType::New();
-			rescaler->SetOutputMinimum(0);
-			rescaler->SetOutputMaximum(255);
-			rescaler->SetInput(filter->GetOutput());
+			if (save_img) {
+				using RescaleFilterType = itk::RescaleIntensityImageFilter<InputImageType, OutputImageType>;
+				RescaleFilterType::Pointer rescaler = RescaleFilterType::New();
+				rescaler->SetOutputMinimum(0);
+				rescaler->SetOutputMaximum(255);
+				rescaler->SetInput(filter->GetOutput());
 
-			using WriterType = itk::ImageFileWriter<OutputImageType>;
-			WriterType::Pointer writer = WriterType::New();
+				using WriterType = itk::ImageFileWriter<OutputImageType>;
+				WriterType::Pointer writer = WriterType::New();
 
-			using pngType = itk::PNGImageIO;
-			pngType::Pointer pngIO1 = pngType::New();
-			itk::PNGImageIOFactory::RegisterOneFactory();
-			writer->SetFileName(save_path);
-			writer->SetImageIO(pngIO1);
-			writer->SetImageIO(itk::PNGImageIO::New());
-			writer->SetInput(rescaler->GetOutput());
-			try
-			{
-				std::cout << "Writing image: " << save_path << std::endl;
-				writer->Update();
+				using pngType = itk::PNGImageIO;
+				pngType::Pointer pngIO1 = pngType::New();
+				itk::PNGImageIOFactory::RegisterOneFactory();
+				writer->SetFileName(save_path);
+				writer->SetImageIO(pngIO1);
+				writer->SetImageIO(itk::PNGImageIO::New());
+				writer->SetInput(rescaler->GetOutput());
+				try
+				{
+					std::cout << "Writing image: " << save_path << std::endl;
+					writer->Update();
+				}
+				catch (itk::ExceptionObject& err)
+				{
+					std::cerr << "ERROR: ExceptionObject caught !" << std::endl;
+					std::cerr << err << std::endl;
+				}
 			}
-			catch (itk::ExceptionObject& err)
-			{
-				std::cerr << "ERROR: ExceptionObject caught !" << std::endl;
-				std::cerr << err << std::endl;
+			else {
+				// 获取图像的最小包围盒
+				itk::ImageRegion<Dimension> boundingBox = GetMinimumBoundingBox(filter->GetOutput());
+				int category_id = detection_dataset->catname2catid[category_name];
+				const std::vector<double> bbox = BoundingBoxTo2DVector(boundingBox);
+				// std::vector<double> rotation_bbox = GetMinimumRotationBox(filter->GetOutput());
+				detection_dataset->add_annotation(image_name, category_id, category_name, bbox, bbox, 0);
 			}
 		}
 	}

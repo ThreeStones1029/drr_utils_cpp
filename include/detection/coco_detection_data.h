@@ -20,7 +20,7 @@ public:
                         const std::string& category_name, 
                         const std::vector<double>& bbox, 
                         const std::vector<double>& rotation_bbox, 
-                        int iscrowd = 0);
+                        int iscrowd);
 
     void to_json(const std::string& save_path);
 
@@ -28,6 +28,8 @@ public:
 
     std::string get_current_date();
     std::unordered_map<std::string, std::vector<std::string>> exist_ct_nii_names;
+    std::unordered_map<int, std::string> catid2catname;
+    std::unordered_map<std::string, int> catname2catid;
 
 
 private:
@@ -37,9 +39,6 @@ private:
     std::vector<nlohmann::json> images;
     std::vector<nlohmann::json> categories;
     std::vector<nlohmann::json> annotations;
-    
-    std::unordered_map<int, std::string> catid2catname;
-    std::unordered_map<std::string, int> catname2catid;
 };
 
 #endif // COCO_DETECTION_DATA_H
