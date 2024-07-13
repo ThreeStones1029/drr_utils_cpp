@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-01 14:16:03
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-06-21 14:45:07
+ * @LastEditTime: 2024-07-13 13:06:19
 -->
 <h2 align="center">Deep Learning Spine DRR Toolkit Cpp</h2>
 <p align="center">
@@ -15,6 +15,11 @@
 
 
 ![drr_utils_examples](assets/drr_utils.png)
+# Open3d Visualization
+<div style="display: flex;">
+    <img src="assets/verse004_detection_example.png" alt="Image 1" width="400"; padding: 5px;">
+    <img src="assets/verse004_segmentation_example.png" alt="Image 2" width="415"; padding: 5px;">
+</div>
 
 ## Repository Notes
 This repository used cpp to reproduce [drr_utils](https://github.com/ThreeStones1029/drr_utils)
