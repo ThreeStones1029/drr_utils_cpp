@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-01 14:09:34
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-07-28 13:34:09
+ * @LastEditTime: 2024-07-28 14:48:48
  */
 #include <iostream>
 #include <filesystem>
@@ -65,6 +65,5 @@ int main(int argc,char** argv){
    //    // 旋转框可视化
    //    vis_image_label.visualize_rotate_bboxes_in_images()
    // }
-   std::cout << is_vis <<std::endl;
    return 0;
 }

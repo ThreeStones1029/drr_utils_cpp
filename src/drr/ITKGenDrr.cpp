@@ -119,7 +119,7 @@ int GenerateDrrs(const std::string& ct_file_path, const std::vector<std::vector<
 		std::string image_name = ct_name + "_" + APorLA + "_" + std::to_string(i + 1) + ".png";
 		std::string save_path = save_images_folder + "/" + image_name;
 		// 添加标注
-		detection_dataset->add_image(image_name, ct_name_with_nii, APorLA, dx, dy, rotations[i], translations[i]);
+		detection_dataset->add_image(image_name, ct_name, APorLA, dx, dy, rotations[i], translations[i]);
 		double rx = rotations[i][0];
 		double ry = rotations[i][1];
 		double rz = rotations[i][2];
