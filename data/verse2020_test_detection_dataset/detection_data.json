@@ -1,5883 +1,1179 @@
 {
     "annotations": [
         {
-            "area": 15606.0,
+            "area": 15960.0,
             "bbox": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
+                157.0,
+                155.0,
+                152.0,
+                105.0
             ],
             "category_id": 6,
             "category_name": "L1",
             "id": 1,
-            "image_id": 18,
+            "image_id": 1,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L1_1.png",
             "segmentation": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
+                157.0,
+                155.0,
+                152.0,
+                105.0
             ]
         },
         {
-            "area": 16983.0,
+            "area": 16485.0,
             "bbox": [
-                157.0,
-                143.0,
                 153.0,
-                111.0
+                146.0,
+                157.0,
+                105.0
             ],
             "category_id": 6,
             "category_name": "L1",
             "id": 2,
-            "image_id": 18,
+            "image_id": 2,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L1_2.png",
             "segmentation": [
-                157.0,
-                143.0,
                 153.0,
-                111.0
+                146.0,
+                157.0,
+                105.0
             ]
         },
         {
-            "area": 20414.0,
+            "area": 18096.0,
             "bbox": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
+                165.0,
+                317.0,
+                174.0,
+                104.0
             ],
             "category_id": 3,
             "category_name": "L4",
             "id": 3,
-            "image_id": 18,
+            "image_id": 1,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L4_1.png",
             "segmentation": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
+                165.0,
+                317.0,
+                174.0,
+                104.0
             ]
         },
         {
-            "area": 18656.0,
+            "area": 20178.0,
             "bbox": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
+                169.0,
+                308.0,
+                177.0,
+                114.0
             ],
             "category_id": 3,
             "category_name": "L4",
             "id": 4,
-            "image_id": 18,
+            "image_id": 2,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L4_2.png",
             "segmentation": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
+                169.0,
+                308.0,
+                177.0,
+                114.0
             ]
         },
         {
-            "area": 9100.0,
+            "area": 8170.0,
             "bbox": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
+                173.0,
+                61.0,
+                95.0,
+                86.0
             ],
             "category_id": 8,
             "category_name": "T11",
             "id": 5,
-            "image_id": 18,
+            "image_id": 1,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_T11_1.png",
             "segmentation": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
+                173.0,
+                61.0,
+                95.0,
+                86.0
             ]
         },
         {
-            "area": 8554.0,
+            "area": 8918.0,
             "bbox": [
-                166.0,
-                51.0,
-                94.0,
+                160.0,
+                41.0,
+                98.0,
                 91.0
             ],
             "category_id": 8,
             "category_name": "T11",
             "id": 6,
-            "image_id": 18,
+            "image_id": 2,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_T11_2.png",
             "segmentation": [
-                166.0,
-                51.0,
-                94.0,
+                160.0,
+                41.0,
+                98.0,
                 91.0
             ]
         },
         {
-            "area": 18228.0,
+            "area": 17205.0,
             "bbox": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
+                157.0,
+                267.0,
+                185.0,
+                93.0
             ],
             "category_id": 4,
             "category_name": "L3",
             "id": 7,
-            "image_id": 18,
+            "image_id": 1,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L3_1.png",
             "segmentation": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
+                157.0,
+                267.0,
+                185.0,
+                93.0
             ]
         },
         {
-            "area": 18414.0,
+            "area": 18522.0,
             "bbox": [
-                159.0,
+                156.0,
                 256.0,
-                186.0,
-                99.0
+                189.0,
+                98.0
             ],
             "category_id": 4,
             "category_name": "L3",
             "id": 8,
-            "image_id": 18,
+            "image_id": 2,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L3_2.png",
             "segmentation": [
-                159.0,
+                156.0,
                 256.0,
-                186.0,
-                99.0
+                189.0,
+                98.0
             ]
         },
         {
-            "area": 17745.0,
+            "area": 17069.0,
             "bbox": [
-                191.0,
-                265.0,
+                153.0,
+                208.0,
                 169.0,
-                105.0
+                101.0
             ],
             "category_id": 5,
             "category_name": "L2",
             "id": 9,
-            "image_id": 18,
+            "image_id": 1,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L2_1.png",
             "segmentation": [
-                191.0,
-                265.0,
+                153.0,
+                208.0,
                 169.0,
-                105.0
+                101.0
             ]
         },
         {
-            "area": 18530.0,
+            "area": 18096.0,
             "bbox": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
+                151.0,
+                198.0,
+                174.0,
+                104.0
             ],
             "category_id": 5,
             "category_name": "L2",
             "id": 10,
-            "image_id": 18,
+            "image_id": 2,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L2_2.png",
             "segmentation": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
+                151.0,
+                198.0,
+                174.0,
+                104.0
             ]
         },
         {
-            "area": 15225.0,
+            "area": 20010.0,
             "bbox": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
+                169.0,
+                369.0,
+                174.0,
+                115.0
             ],
             "category_id": 2,
             "category_name": "L5",
             "id": 11,
-            "image_id": 18,
+            "image_id": 1,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L5_1.png",
             "segmentation": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
+                169.0,
+                369.0,
+                174.0,
+                115.0
             ]
         },
         {
-            "area": 21120.0,
+            "area": 21948.0,
             "bbox": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
+                178.0,
+                360.0,
+                177.0,
+                124.0
             ],
             "category_id": 2,
             "category_name": "L5",
             "id": 12,
-            "image_id": 18,
+            "image_id": 2,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_L5_2.png",
             "segmentation": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
+                178.0,
+                360.0,
+                177.0,
+                124.0
             ]
         },
         {
-            "area": 9435.0,
+            "area": 9156.0,
             "bbox": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
+                164.0,
+                12.0,
+                109.0,
+                84.0
             ],
             "category_id": 9,
             "category_name": "T10",
             "id": 13,
-            "image_id": 18,
+            "image_id": 1,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_T10_1.png",
             "segmentation": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
+                164.0,
+                12.0,
+                109.0,
+                84.0
             ]
         },
         {
-            "area": 9328.0,
+            "area": 8624.0,
             "bbox": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
+                152.0,
+                0.0,
+                112.0,
+                77.0
             ],
             "category_id": 9,
             "category_name": "T10",
             "id": 14,
-            "image_id": 18,
+            "image_id": 2,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_T10_2.png",
             "segmentation": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
+                152.0,
+                0.0,
+                112.0,
+                77.0
             ]
         },
         {
-            "area": 9310.0,
+            "area": 8928.0,
             "bbox": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
+                181.0,
+                113.0,
+                96.0,
+                93.0
             ],
             "category_id": 7,
             "category_name": "T12",
             "id": 15,
-            "image_id": 18,
+            "image_id": 1,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_T12_1.png",
             "segmentation": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
+                181.0,
+                113.0,
+                96.0,
+                93.0
             ]
         },
         {
-            "area": 9400.0,
+            "area": 9312.0,
             "bbox": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
+                168.0,
+                99.0,
+                97.0,
+                96.0
             ],
             "category_id": 7,
             "category_name": "T12",
             "id": 16,
-            "image_id": 18,
+            "image_id": 2,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_T12_2.png",
             "segmentation": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
+                168.0,
+                99.0,
+                97.0,
+                96.0
             ]
         },
         {
-            "area": 10070.0,
+            "area": 6077.0,
             "bbox": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
+                158.0,
+                0.0,
+                103.0,
+                59.0
             ],
             "category_id": 10,
             "category_name": "T9",
             "id": 17,
-            "image_id": 18,
+            "image_id": 1,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_T9_1.png",
             "segmentation": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
+                158.0,
+                0.0,
+                103.0,
+                59.0
             ]
         },
         {
-            "area": 5643.0,
+            "area": 3154.0,
             "bbox": [
                 151.0,
                 0.0,
-                99.0,
-                57.0
+                83.0,
+                38.0
             ],
             "category_id": 10,
             "category_name": "T9",
             "id": 18,
-            "image_id": 18,
+            "image_id": 2,
             "iscrowd": 0,
             "mask_file_name": "verse004_AP_T9_2.png",
             "segmentation": [
                 151.0,
                 0.0,
-                99.0,
-                57.0
+                83.0,
+                38.0
             ]
         },
         {
-            "area": 14746.0,
+            "area": 16200.0,
             "bbox": [
                 150.0,
-                186.0,
-                146.0,
-                101.0
+                179.0,
+                162.0,
+                100.0
             ],
             "category_id": 6,
             "category_name": "L1",
             "id": 19,
-            "image_id": 20,
+            "image_id": 3,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L1_1.png",
             "segmentation": [
                 150.0,
-                186.0,
-                146.0,
-                101.0
+                179.0,
+                162.0,
+                100.0
             ]
         },
         {
-            "area": 17493.0,
+            "area": 18036.0,
             "bbox": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
+                151.0,
+                206.0,
+                167.0,
+                108.0
             ],
             "category_id": 6,
             "category_name": "L1",
             "id": 20,
-            "image_id": 20,
+            "image_id": 4,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L1_2.png",
             "segmentation": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
+                151.0,
+                206.0,
+                167.0,
+                108.0
             ]
         },
         {
-            "area": 18144.0,
+            "area": 20280.0,
             "bbox": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
+                134.0,
+                338.0,
+                169.0,
+                120.0
             ],
             "category_id": 3,
             "category_name": "L4",
             "id": 21,
-            "image_id": 20,
+            "image_id": 3,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L4_1.png",
             "segmentation": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
+                134.0,
+                338.0,
+                169.0,
+                120.0
             ]
         },
         {
-            "area": 17900.0,
+            "area": 20274.0,
             "bbox": [
-                167.0,
-                279.0,
-                179.0,
-                100.0
+                144.0,
+                385.0,
+                186.0,
+                109.0
             ],
             "category_id": 3,
             "category_name": "L4",
             "id": 22,
-            "image_id": 20,
+            "image_id": 4,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L4_2.png",
             "segmentation": [
-                167.0,
-                279.0,
-                179.0,
-                100.0
+                144.0,
+                385.0,
+                186.0,
+                109.0
             ]
         },
         {
-            "area": 12672.0,
+            "area": 13386.0,
             "bbox": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
+                165.0,
+                57.0,
+                138.0,
+                97.0
             ],
             "category_id": 8,
             "category_name": "T11",
             "id": 23,
-            "image_id": 20,
+            "image_id": 3,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_T11_1.png",
             "segmentation": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
+                165.0,
+                57.0,
+                138.0,
+                97.0
             ]
         },
         {
-            "area": 14256.0,
+            "area": 15052.0,
             "bbox": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
+                154.0,
+                84.0,
+                142.0,
+                106.0
             ],
             "category_id": 8,
             "category_name": "T11",
             "id": 24,
-            "image_id": 20,
+            "image_id": 4,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_T11_2.png",
             "segmentation": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
+                154.0,
+                84.0,
+                142.0,
+                106.0
             ]
         },
         {
-            "area": 15444.0,
+            "area": 17098.0,
             "bbox": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
+                143.0,
+                289.0,
+                166.0,
+                103.0
             ],
             "category_id": 4,
             "category_name": "L3",
             "id": 25,
-            "image_id": 20,
+            "image_id": 3,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L3_1.png",
             "segmentation": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
+                143.0,
+                289.0,
+                166.0,
+                103.0
             ]
         },
         {
-            "area": 17490.0,
+            "area": 18054.0,
             "bbox": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
+                152.0,
+                328.0,
+                177.0,
+                102.0
             ],
             "category_id": 4,
             "category_name": "L3",
             "id": 26,
-            "image_id": 20,
+            "image_id": 4,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L3_2.png",
             "segmentation": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
+                152.0,
+                328.0,
+                177.0,
+                102.0
             ]
         },
         {
-            "area": 15759.0,
+            "area": 15958.0,
             "bbox": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
+                149.0,
+                232.0,
+                158.0,
+                101.0
             ],
             "category_id": 5,
             "category_name": "L2",
             "id": 27,
-            "image_id": 20,
+            "image_id": 3,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L2_1.png",
             "segmentation": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
+                149.0,
+                232.0,
+                158.0,
+                101.0
             ]
         },
         {
-            "area": 19680.0,
+            "area": 18126.0,
             "bbox": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
+                154.0,
+                264.0,
+                171.0,
+                106.0
             ],
             "category_id": 5,
             "category_name": "L2",
             "id": 28,
-            "image_id": 20,
+            "image_id": 4,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L2_2.png",
             "segmentation": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
+                154.0,
+                264.0,
+                171.0,
+                106.0
             ]
         },
         {
-            "area": 16779.0,
+            "area": 17280.0,
             "bbox": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
+                119.0,
+                384.0,
+                135.0,
+                128.0
             ],
             "category_id": 2,
             "category_name": "L5",
             "id": 29,
-            "image_id": 20,
+            "image_id": 3,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L5_1.png",
             "segmentation": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
+                119.0,
+                384.0,
+                135.0,
+                128.0
             ]
         },
         {
-            "area": 16432.0,
+            "area": 11304.0,
             "bbox": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
+                130.0,
+                440.0,
+                157.0,
+                72.0
             ],
             "category_id": 2,
             "category_name": "L5",
             "id": 30,
-            "image_id": 20,
+            "image_id": 4,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_L5_2.png",
             "segmentation": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
+                130.0,
+                440.0,
+                157.0,
+                72.0
             ]
         },
         {
-            "area": 11303.0,
+            "area": 11592.0,
             "bbox": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
+                174.0,
+                4.0,
+                138.0,
+                84.0
             ],
             "category_id": 9,
             "category_name": "T10",
             "id": 31,
-            "image_id": 20,
+            "image_id": 3,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_T10_1.png",
             "segmentation": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
+                174.0,
+                4.0,
+                138.0,
+                84.0
             ]
         },
         {
-            "area": 6000.0,
+            "area": 12880.0,
             "bbox": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
+                156.0,
+                32.0,
+                140.0,
+                92.0
             ],
             "category_id": 9,
             "category_name": "T10",
             "id": 32,
-            "image_id": 20,
+            "image_id": 4,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_T10_2.png",
             "segmentation": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
+                156.0,
+                32.0,
+                140.0,
+                92.0
             ]
         },
         {
-            "area": 12920.0,
+            "area": 13775.0,
             "bbox": [
-                141.0,
-                134.0,
-                136.0,
+                156.0,
+                122.0,
+                145.0,
                 95.0
             ],
             "category_id": 7,
             "category_name": "T12",
             "id": 33,
-            "image_id": 20,
+            "image_id": 3,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_T12_1.png",
             "segmentation": [
-                141.0,
-                134.0,
-                136.0,
+                156.0,
+                122.0,
+                145.0,
                 95.0
             ]
         },
         {
-            "area": 15042.0,
+            "area": 15688.0,
             "bbox": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
+                150.0,
+                148.0,
+                148.0,
+                106.0
             ],
             "category_id": 7,
             "category_name": "T12",
             "id": 34,
-            "image_id": 20,
+            "image_id": 4,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_T12_2.png",
             "segmentation": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
+                150.0,
+                148.0,
+                148.0,
+                106.0
             ]
         },
         {
-            "area": 8246.0,
+            "area": 6480.0,
             "bbox": [
-                127.0,
+                179.0,
                 0.0,
-                133.0,
-                62.0
+                144.0,
+                45.0
             ],
             "category_id": 10,
             "category_name": "T9",
             "id": 35,
-            "image_id": 20,
+            "image_id": 3,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_T9_1.png",
             "segmentation": [
-                127.0,
+                179.0,
                 0.0,
-                133.0,
-                62.0
+                144.0,
+                45.0
             ]
         },
         {
-            "area": 200.0,
+            "area": 11232.0,
             "bbox": [
-                104.0,
+                158.0,
                 0.0,
-                20.0,
-                10.0
+                144.0,
+                78.0
             ],
             "category_id": 10,
             "category_name": "T9",
             "id": 36,
-            "image_id": 20,
+            "image_id": 4,
             "iscrowd": 0,
             "mask_file_name": "verse004_LA_T9_2.png",
             "segmentation": [
-                104.0,
+                158.0,
                 0.0,
-                20.0,
-                10.0
+                144.0,
+                78.0
             ]
         },
         {
-            "area": 18422.0,
+            "area": 17640.0,
             "bbox": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
+                159.0,
+                0.0,
+                147.0,
+                120.0
             ],
             "category_id": 6,
             "category_name": "L1",
             "id": 37,
-            "image_id": 22,
+            "image_id": 5,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L1_1.png",
             "segmentation": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
+                159.0,
+                0.0,
+                147.0,
+                120.0
             ]
         },
         {
-            "area": 17020.0,
+            "area": 15912.0,
             "bbox": [
-                148.0,
+                140.0,
                 0.0,
-                148.0,
-                115.0
+                156.0,
+                102.0
             ],
             "category_id": 6,
             "category_name": "L1",
             "id": 38,
-            "image_id": 22,
+            "image_id": 6,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L1_2.png",
             "segmentation": [
-                148.0,
+                140.0,
                 0.0,
-                148.0,
-                115.0
+                156.0,
+                102.0
             ]
         },
         {
-            "area": 21090.0,
+            "area": 19729.0,
             "bbox": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
+                152.0,
+                127.0,
+                181.0,
+                109.0
             ],
             "category_id": 4,
             "category_name": "L3",
             "id": 39,
-            "image_id": 22,
+            "image_id": 5,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L3_1.png",
             "segmentation": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
+                152.0,
+                127.0,
+                181.0,
+                109.0
             ]
         },
         {
-            "area": 20792.0,
+            "area": 21850.0,
             "bbox": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
+                141.0,
+                109.0,
+                190.0,
+                115.0
             ],
             "category_id": 4,
             "category_name": "L3",
             "id": 40,
-            "image_id": 22,
+            "image_id": 6,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L3_2.png",
             "segmentation": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
+                141.0,
+                109.0,
+                190.0,
+                115.0
             ]
         },
         {
-            "area": 23474.0,
+            "area": 19760.0,
             "bbox": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
+                150.0,
+                183.0,
+                190.0,
+                104.0
             ],
             "category_id": 3,
             "category_name": "L4",
             "id": 41,
-            "image_id": 22,
+            "image_id": 5,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L4_1.png",
             "segmentation": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
+                150.0,
+                183.0,
+                190.0,
+                104.0
             ]
         },
         {
-            "area": 21534.0,
+            "area": 23283.0,
             "bbox": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
+                142.0,
+                168.0,
+                199.0,
+                117.0
             ],
             "category_id": 3,
             "category_name": "L4",
             "id": 42,
-            "image_id": 22,
+            "image_id": 6,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L4_2.png",
             "segmentation": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
+                142.0,
+                168.0,
+                199.0,
+                117.0
             ]
         },
         {
-            "area": 26496.0,
+            "area": 22800.0,
             "bbox": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
+                151.0,
+                247.0,
+                200.0,
+                114.0
             ],
             "category_id": 2,
             "category_name": "L5",
             "id": 43,
-            "image_id": 22,
+            "image_id": 5,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L5_1.png",
             "segmentation": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
+                151.0,
+                247.0,
+                200.0,
+                114.0
             ]
         },
         {
-            "area": 23805.0,
+            "area": 26250.0,
             "bbox": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
+                146.0,
+                234.0,
+                210.0,
+                125.0
             ],
             "category_id": 2,
             "category_name": "L5",
             "id": 44,
-            "image_id": 22,
+            "image_id": 6,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L5_2.png",
             "segmentation": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
+                146.0,
+                234.0,
+                210.0,
+                125.0
             ]
         },
         {
-            "area": 19754.0,
+            "area": 20049.0,
             "bbox": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
+                153.0,
+                53.0,
+                163.0,
+                123.0
             ],
             "category_id": 5,
             "category_name": "L2",
             "id": 45,
-            "image_id": 22,
+            "image_id": 5,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L2_1.png",
             "segmentation": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
+                153.0,
+                53.0,
+                163.0,
+                123.0
             ]
         },
         {
-            "area": 21812.0,
+            "area": 21204.0,
             "bbox": [
-                145.0,
+                138.0,
                 37.0,
-                164.0,
-                133.0
+                171.0,
+                124.0
             ],
             "category_id": 5,
             "category_name": "L2",
             "id": 46,
-            "image_id": 22,
+            "image_id": 6,
             "iscrowd": 0,
             "mask_file_name": "verse005_AP_L2_2.png",
             "segmentation": [
-                145.0,
+                138.0,
                 37.0,
-                164.0,
-                133.0
+                171.0,
+                124.0
             ]
         },
         {
-            "area": 19040.0,
+            "area": 16896.0,
             "bbox": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
+                184.0,
+                30.0,
+                176.0,
+                96.0
             ],
             "category_id": 6,
             "category_name": "L1",
             "id": 47,
-            "image_id": 24,
+            "image_id": 7,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L1_1.png",
             "segmentation": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
+                184.0,
+                30.0,
+                176.0,
+                96.0
             ]
         },
         {
-            "area": 12616.0,
+            "area": 18128.0,
             "bbox": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
+                169.0,
+                57.0,
+                176.0,
+                103.0
             ],
             "category_id": 6,
             "category_name": "L1",
             "id": 48,
-            "image_id": 24,
+            "image_id": 8,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L1_2.png",
             "segmentation": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
+                169.0,
+                57.0,
+                176.0,
+                103.0
             ]
         },
         {
-            "area": 20832.0,
+            "area": 20952.0,
             "bbox": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
+                168.0,
+                152.0,
+                194.0,
+                108.0
             ],
             "category_id": 4,
             "category_name": "L3",
             "id": 49,
-            "image_id": 24,
+            "image_id": 7,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L3_1.png",
             "segmentation": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
+                168.0,
+                152.0,
+                194.0,
+                108.0
             ]
         },
         {
-            "area": 25344.0,
+            "area": 24948.0,
             "bbox": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
+                163.0,
+                174.0,
+                198.0,
+                126.0
             ],
             "category_id": 4,
             "category_name": "L3",
             "id": 50,
-            "image_id": 24,
+            "image_id": 8,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L3_2.png",
             "segmentation": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
+                163.0,
+                174.0,
+                198.0,
+                126.0
             ]
         },
         {
-            "area": 19950.0,
+            "area": 23493.0,
             "bbox": [
-                150.0,
-                209.0,
-                190.0,
-                105.0
+                149.0,
+                212.0,
+                191.0,
+                123.0
             ],
             "category_id": 3,
             "category_name": "L4",
             "id": 51,
-            "image_id": 24,
+            "image_id": 7,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L4_1.png",
             "segmentation": [
-                150.0,
-                209.0,
-                190.0,
-                105.0
+                149.0,
+                212.0,
+                191.0,
+                123.0
             ]
         },
         {
-            "area": 22458.0,
+            "area": 24840.0,
             "bbox": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
+                146.0,
+                238.0,
+                207.0,
+                120.0
             ],
             "category_id": 3,
             "category_name": "L4",
             "id": 52,
-            "image_id": 24,
+            "image_id": 8,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L4_2.png",
             "segmentation": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
+                146.0,
+                238.0,
+                207.0,
+                120.0
             ]
         },
         {
-            "area": 20470.0,
+            "area": 21375.0,
             "bbox": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
+                133.0,
+                272.0,
+                171.0,
+                125.0
             ],
             "category_id": 2,
             "category_name": "L5",
             "id": 53,
-            "image_id": 24,
+            "image_id": 7,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L5_1.png",
             "segmentation": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
+                133.0,
+                272.0,
+                171.0,
+                125.0
             ]
         },
         {
-            "area": 22610.0,
+            "area": 24448.0,
             "bbox": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
+                133.0,
+                303.0,
+                191.0,
+                128.0
             ],
             "category_id": 2,
             "category_name": "L5",
             "id": 54,
-            "image_id": 24,
+            "image_id": 8,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L5_2.png",
             "segmentation": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
+                133.0,
+                303.0,
+                191.0,
+                128.0
             ]
         },
         {
-            "area": 19080.0,
+            "area": 20009.0,
             "bbox": [
-                155.0,
+                175.0,
                 91.0,
-                180.0,
-                106.0
+                187.0,
+                107.0
             ],
             "category_id": 5,
             "category_name": "L2",
             "id": 55,
-            "image_id": 24,
+            "image_id": 7,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L2_1.png",
             "segmentation": [
-                155.0,
+                175.0,
                 91.0,
-                180.0,
-                106.0
+                187.0,
+                107.0
             ]
         },
         {
-            "area": 23220.0,
+            "area": 22230.0,
             "bbox": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
+                167.0,
+                115.0,
+                190.0,
+                117.0
             ],
             "category_id": 5,
             "category_name": "L2",
             "id": 56,
-            "image_id": 24,
+            "image_id": 8,
             "iscrowd": 0,
             "mask_file_name": "verse005_LA_L2_2.png",
             "segmentation": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
-            ]
-        },
-        {
-            "area": 15606.0,
-            "bbox": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 57,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L1_1.png",
-            "segmentation": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
-            ]
-        },
-        {
-            "area": 16983.0,
-            "bbox": [
-                157.0,
-                143.0,
-                153.0,
-                111.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 58,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L1_2.png",
-            "segmentation": [
-                157.0,
-                143.0,
-                153.0,
-                111.0
-            ]
-        },
-        {
-            "area": 20414.0,
-            "bbox": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 59,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L4_1.png",
-            "segmentation": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
-            ]
-        },
-        {
-            "area": 18656.0,
-            "bbox": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 60,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L4_2.png",
-            "segmentation": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
-            ]
-        },
-        {
-            "area": 9100.0,
-            "bbox": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 61,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T11_1.png",
-            "segmentation": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
-            ]
-        },
-        {
-            "area": 8554.0,
-            "bbox": [
-                166.0,
-                51.0,
-                94.0,
-                91.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 62,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T11_2.png",
-            "segmentation": [
-                166.0,
-                51.0,
-                94.0,
-                91.0
-            ]
-        },
-        {
-            "area": 18228.0,
-            "bbox": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 63,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L3_1.png",
-            "segmentation": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
-            ]
-        },
-        {
-            "area": 18414.0,
-            "bbox": [
-                159.0,
-                256.0,
-                186.0,
-                99.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 64,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L3_2.png",
-            "segmentation": [
-                159.0,
-                256.0,
-                186.0,
-                99.0
-            ]
-        },
-        {
-            "area": 17745.0,
-            "bbox": [
-                191.0,
-                265.0,
-                169.0,
-                105.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 65,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L2_1.png",
-            "segmentation": [
-                191.0,
-                265.0,
-                169.0,
-                105.0
-            ]
-        },
-        {
-            "area": 18530.0,
-            "bbox": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 66,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L2_2.png",
-            "segmentation": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
-            ]
-        },
-        {
-            "area": 15225.0,
-            "bbox": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 67,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L5_1.png",
-            "segmentation": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
-            ]
-        },
-        {
-            "area": 21120.0,
-            "bbox": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 68,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L5_2.png",
-            "segmentation": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
-            ]
-        },
-        {
-            "area": 9435.0,
-            "bbox": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 69,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T10_1.png",
-            "segmentation": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
-            ]
-        },
-        {
-            "area": 9328.0,
-            "bbox": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 70,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T10_2.png",
-            "segmentation": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
-            ]
-        },
-        {
-            "area": 9310.0,
-            "bbox": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 71,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T12_1.png",
-            "segmentation": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
-            ]
-        },
-        {
-            "area": 9400.0,
-            "bbox": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 72,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T12_2.png",
-            "segmentation": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
-            ]
-        },
-        {
-            "area": 10070.0,
-            "bbox": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 73,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T9_1.png",
-            "segmentation": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
-            ]
-        },
-        {
-            "area": 5643.0,
-            "bbox": [
-                151.0,
-                0.0,
-                99.0,
-                57.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 74,
-            "image_id": 26,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T9_2.png",
-            "segmentation": [
-                151.0,
-                0.0,
-                99.0,
-                57.0
-            ]
-        },
-        {
-            "area": 14746.0,
-            "bbox": [
-                150.0,
-                186.0,
-                146.0,
-                101.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 75,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L1_1.png",
-            "segmentation": [
-                150.0,
-                186.0,
-                146.0,
-                101.0
-            ]
-        },
-        {
-            "area": 17493.0,
-            "bbox": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 76,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L1_2.png",
-            "segmentation": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
-            ]
-        },
-        {
-            "area": 18144.0,
-            "bbox": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 77,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L4_1.png",
-            "segmentation": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
-            ]
-        },
-        {
-            "area": 17900.0,
-            "bbox": [
                 167.0,
-                279.0,
-                179.0,
-                100.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 78,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L4_2.png",
-            "segmentation": [
-                167.0,
-                279.0,
-                179.0,
-                100.0
-            ]
-        },
-        {
-            "area": 12672.0,
-            "bbox": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 79,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T11_1.png",
-            "segmentation": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
-            ]
-        },
-        {
-            "area": 14256.0,
-            "bbox": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 80,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T11_2.png",
-            "segmentation": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
-            ]
-        },
-        {
-            "area": 15444.0,
-            "bbox": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 81,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L3_1.png",
-            "segmentation": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
-            ]
-        },
-        {
-            "area": 17490.0,
-            "bbox": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 82,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L3_2.png",
-            "segmentation": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
-            ]
-        },
-        {
-            "area": 15759.0,
-            "bbox": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 83,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L2_1.png",
-            "segmentation": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
-            ]
-        },
-        {
-            "area": 19680.0,
-            "bbox": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 84,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L2_2.png",
-            "segmentation": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
-            ]
-        },
-        {
-            "area": 16779.0,
-            "bbox": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 85,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L5_1.png",
-            "segmentation": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
-            ]
-        },
-        {
-            "area": 16432.0,
-            "bbox": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 86,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L5_2.png",
-            "segmentation": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
-            ]
-        },
-        {
-            "area": 11303.0,
-            "bbox": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 87,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T10_1.png",
-            "segmentation": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
-            ]
-        },
-        {
-            "area": 6000.0,
-            "bbox": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 88,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T10_2.png",
-            "segmentation": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
-            ]
-        },
-        {
-            "area": 12920.0,
-            "bbox": [
-                141.0,
-                134.0,
-                136.0,
-                95.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 89,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T12_1.png",
-            "segmentation": [
-                141.0,
-                134.0,
-                136.0,
-                95.0
-            ]
-        },
-        {
-            "area": 15042.0,
-            "bbox": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 90,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T12_2.png",
-            "segmentation": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
-            ]
-        },
-        {
-            "area": 8246.0,
-            "bbox": [
-                127.0,
-                0.0,
-                133.0,
-                62.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 91,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T9_1.png",
-            "segmentation": [
-                127.0,
-                0.0,
-                133.0,
-                62.0
-            ]
-        },
-        {
-            "area": 200.0,
-            "bbox": [
-                104.0,
-                0.0,
-                20.0,
-                10.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 92,
-            "image_id": 28,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T9_2.png",
-            "segmentation": [
-                104.0,
-                0.0,
-                20.0,
-                10.0
-            ]
-        },
-        {
-            "area": 18422.0,
-            "bbox": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 93,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L1_1.png",
-            "segmentation": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
-            ]
-        },
-        {
-            "area": 17020.0,
-            "bbox": [
-                148.0,
-                0.0,
-                148.0,
-                115.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 94,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L1_2.png",
-            "segmentation": [
-                148.0,
-                0.0,
-                148.0,
-                115.0
-            ]
-        },
-        {
-            "area": 21090.0,
-            "bbox": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 95,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L3_1.png",
-            "segmentation": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
-            ]
-        },
-        {
-            "area": 20792.0,
-            "bbox": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 96,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L3_2.png",
-            "segmentation": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
-            ]
-        },
-        {
-            "area": 23474.0,
-            "bbox": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 97,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L4_1.png",
-            "segmentation": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
-            ]
-        },
-        {
-            "area": 21534.0,
-            "bbox": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 98,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L4_2.png",
-            "segmentation": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
-            ]
-        },
-        {
-            "area": 26496.0,
-            "bbox": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 99,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L5_1.png",
-            "segmentation": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
-            ]
-        },
-        {
-            "area": 23805.0,
-            "bbox": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 100,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L5_2.png",
-            "segmentation": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
-            ]
-        },
-        {
-            "area": 19754.0,
-            "bbox": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 101,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L2_1.png",
-            "segmentation": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
-            ]
-        },
-        {
-            "area": 21812.0,
-            "bbox": [
-                145.0,
-                37.0,
-                164.0,
-                133.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 102,
-            "image_id": 30,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L2_2.png",
-            "segmentation": [
-                145.0,
-                37.0,
-                164.0,
-                133.0
-            ]
-        },
-        {
-            "area": 19040.0,
-            "bbox": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 103,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L1_1.png",
-            "segmentation": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
-            ]
-        },
-        {
-            "area": 12616.0,
-            "bbox": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 104,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L1_2.png",
-            "segmentation": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
-            ]
-        },
-        {
-            "area": 20832.0,
-            "bbox": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 105,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L3_1.png",
-            "segmentation": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
-            ]
-        },
-        {
-            "area": 25344.0,
-            "bbox": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 106,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L3_2.png",
-            "segmentation": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
-            ]
-        },
-        {
-            "area": 19950.0,
-            "bbox": [
-                150.0,
-                209.0,
+                115.0,
                 190.0,
-                105.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 107,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L4_1.png",
-            "segmentation": [
-                150.0,
-                209.0,
-                190.0,
-                105.0
-            ]
-        },
-        {
-            "area": 22458.0,
-            "bbox": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 108,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L4_2.png",
-            "segmentation": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
-            ]
-        },
-        {
-            "area": 20470.0,
-            "bbox": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 109,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L5_1.png",
-            "segmentation": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
-            ]
-        },
-        {
-            "area": 22610.0,
-            "bbox": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 110,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L5_2.png",
-            "segmentation": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
-            ]
-        },
-        {
-            "area": 19080.0,
-            "bbox": [
-                155.0,
-                91.0,
-                180.0,
-                106.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 111,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L2_1.png",
-            "segmentation": [
-                155.0,
-                91.0,
-                180.0,
-                106.0
-            ]
-        },
-        {
-            "area": 23220.0,
-            "bbox": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 112,
-            "image_id": 32,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L2_2.png",
-            "segmentation": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
-            ]
-        },
-        {
-            "area": 15606.0,
-            "bbox": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 113,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L1_1.png",
-            "segmentation": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
-            ]
-        },
-        {
-            "area": 16983.0,
-            "bbox": [
-                157.0,
-                143.0,
-                153.0,
-                111.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 114,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L1_2.png",
-            "segmentation": [
-                157.0,
-                143.0,
-                153.0,
-                111.0
-            ]
-        },
-        {
-            "area": 20414.0,
-            "bbox": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 115,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L4_1.png",
-            "segmentation": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
-            ]
-        },
-        {
-            "area": 18656.0,
-            "bbox": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 116,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L4_2.png",
-            "segmentation": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
-            ]
-        },
-        {
-            "area": 9100.0,
-            "bbox": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 117,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T11_1.png",
-            "segmentation": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
-            ]
-        },
-        {
-            "area": 8554.0,
-            "bbox": [
-                166.0,
-                51.0,
-                94.0,
-                91.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 118,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T11_2.png",
-            "segmentation": [
-                166.0,
-                51.0,
-                94.0,
-                91.0
-            ]
-        },
-        {
-            "area": 18228.0,
-            "bbox": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 119,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L3_1.png",
-            "segmentation": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
-            ]
-        },
-        {
-            "area": 18414.0,
-            "bbox": [
-                159.0,
-                256.0,
-                186.0,
-                99.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 120,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L3_2.png",
-            "segmentation": [
-                159.0,
-                256.0,
-                186.0,
-                99.0
-            ]
-        },
-        {
-            "area": 17745.0,
-            "bbox": [
-                191.0,
-                265.0,
-                169.0,
-                105.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 121,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L2_1.png",
-            "segmentation": [
-                191.0,
-                265.0,
-                169.0,
-                105.0
-            ]
-        },
-        {
-            "area": 18530.0,
-            "bbox": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 122,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L2_2.png",
-            "segmentation": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
-            ]
-        },
-        {
-            "area": 15225.0,
-            "bbox": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 123,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L5_1.png",
-            "segmentation": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
-            ]
-        },
-        {
-            "area": 21120.0,
-            "bbox": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 124,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L5_2.png",
-            "segmentation": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
-            ]
-        },
-        {
-            "area": 9435.0,
-            "bbox": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 125,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T10_1.png",
-            "segmentation": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
-            ]
-        },
-        {
-            "area": 9328.0,
-            "bbox": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 126,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T10_2.png",
-            "segmentation": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
-            ]
-        },
-        {
-            "area": 9310.0,
-            "bbox": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 127,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T12_1.png",
-            "segmentation": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
-            ]
-        },
-        {
-            "area": 9400.0,
-            "bbox": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 128,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T12_2.png",
-            "segmentation": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
-            ]
-        },
-        {
-            "area": 10070.0,
-            "bbox": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 129,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T9_1.png",
-            "segmentation": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
-            ]
-        },
-        {
-            "area": 5643.0,
-            "bbox": [
-                151.0,
-                0.0,
-                99.0,
-                57.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 130,
-            "image_id": 34,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T9_2.png",
-            "segmentation": [
-                151.0,
-                0.0,
-                99.0,
-                57.0
-            ]
-        },
-        {
-            "area": 14746.0,
-            "bbox": [
-                150.0,
-                186.0,
-                146.0,
-                101.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 131,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L1_1.png",
-            "segmentation": [
-                150.0,
-                186.0,
-                146.0,
-                101.0
-            ]
-        },
-        {
-            "area": 17493.0,
-            "bbox": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 132,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L1_2.png",
-            "segmentation": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
-            ]
-        },
-        {
-            "area": 18144.0,
-            "bbox": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 133,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L4_1.png",
-            "segmentation": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
-            ]
-        },
-        {
-            "area": 17900.0,
-            "bbox": [
-                167.0,
-                279.0,
-                179.0,
-                100.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 134,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L4_2.png",
-            "segmentation": [
-                167.0,
-                279.0,
-                179.0,
-                100.0
-            ]
-        },
-        {
-            "area": 12672.0,
-            "bbox": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 135,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T11_1.png",
-            "segmentation": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
-            ]
-        },
-        {
-            "area": 14256.0,
-            "bbox": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 136,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T11_2.png",
-            "segmentation": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
-            ]
-        },
-        {
-            "area": 15444.0,
-            "bbox": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 137,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L3_1.png",
-            "segmentation": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
-            ]
-        },
-        {
-            "area": 17490.0,
-            "bbox": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 138,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L3_2.png",
-            "segmentation": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
-            ]
-        },
-        {
-            "area": 15759.0,
-            "bbox": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 139,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L2_1.png",
-            "segmentation": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
-            ]
-        },
-        {
-            "area": 19680.0,
-            "bbox": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 140,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L2_2.png",
-            "segmentation": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
-            ]
-        },
-        {
-            "area": 16779.0,
-            "bbox": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 141,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L5_1.png",
-            "segmentation": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
-            ]
-        },
-        {
-            "area": 16432.0,
-            "bbox": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 142,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L5_2.png",
-            "segmentation": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
-            ]
-        },
-        {
-            "area": 11303.0,
-            "bbox": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 143,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T10_1.png",
-            "segmentation": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
-            ]
-        },
-        {
-            "area": 6000.0,
-            "bbox": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 144,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T10_2.png",
-            "segmentation": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
-            ]
-        },
-        {
-            "area": 12920.0,
-            "bbox": [
-                141.0,
-                134.0,
-                136.0,
-                95.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 145,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T12_1.png",
-            "segmentation": [
-                141.0,
-                134.0,
-                136.0,
-                95.0
-            ]
-        },
-        {
-            "area": 15042.0,
-            "bbox": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 146,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T12_2.png",
-            "segmentation": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
-            ]
-        },
-        {
-            "area": 8246.0,
-            "bbox": [
-                127.0,
-                0.0,
-                133.0,
-                62.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 147,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T9_1.png",
-            "segmentation": [
-                127.0,
-                0.0,
-                133.0,
-                62.0
-            ]
-        },
-        {
-            "area": 200.0,
-            "bbox": [
-                104.0,
-                0.0,
-                20.0,
-                10.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 148,
-            "image_id": 36,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T9_2.png",
-            "segmentation": [
-                104.0,
-                0.0,
-                20.0,
-                10.0
-            ]
-        },
-        {
-            "area": 18422.0,
-            "bbox": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 149,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L1_1.png",
-            "segmentation": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
-            ]
-        },
-        {
-            "area": 17020.0,
-            "bbox": [
-                148.0,
-                0.0,
-                148.0,
-                115.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 150,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L1_2.png",
-            "segmentation": [
-                148.0,
-                0.0,
-                148.0,
-                115.0
-            ]
-        },
-        {
-            "area": 21090.0,
-            "bbox": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 151,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L3_1.png",
-            "segmentation": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
-            ]
-        },
-        {
-            "area": 20792.0,
-            "bbox": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 152,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L3_2.png",
-            "segmentation": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
-            ]
-        },
-        {
-            "area": 23474.0,
-            "bbox": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 153,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L4_1.png",
-            "segmentation": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
-            ]
-        },
-        {
-            "area": 21534.0,
-            "bbox": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 154,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L4_2.png",
-            "segmentation": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
-            ]
-        },
-        {
-            "area": 26496.0,
-            "bbox": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 155,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L5_1.png",
-            "segmentation": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
-            ]
-        },
-        {
-            "area": 23805.0,
-            "bbox": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 156,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L5_2.png",
-            "segmentation": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
-            ]
-        },
-        {
-            "area": 19754.0,
-            "bbox": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 157,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L2_1.png",
-            "segmentation": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
-            ]
-        },
-        {
-            "area": 21812.0,
-            "bbox": [
-                145.0,
-                37.0,
-                164.0,
-                133.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 158,
-            "image_id": 38,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L2_2.png",
-            "segmentation": [
-                145.0,
-                37.0,
-                164.0,
-                133.0
-            ]
-        },
-        {
-            "area": 19040.0,
-            "bbox": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 159,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L1_1.png",
-            "segmentation": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
-            ]
-        },
-        {
-            "area": 12616.0,
-            "bbox": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 160,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L1_2.png",
-            "segmentation": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
-            ]
-        },
-        {
-            "area": 20832.0,
-            "bbox": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 161,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L3_1.png",
-            "segmentation": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
-            ]
-        },
-        {
-            "area": 25344.0,
-            "bbox": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 162,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L3_2.png",
-            "segmentation": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
-            ]
-        },
-        {
-            "area": 19950.0,
-            "bbox": [
-                150.0,
-                209.0,
-                190.0,
-                105.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 163,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L4_1.png",
-            "segmentation": [
-                150.0,
-                209.0,
-                190.0,
-                105.0
-            ]
-        },
-        {
-            "area": 22458.0,
-            "bbox": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 164,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L4_2.png",
-            "segmentation": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
-            ]
-        },
-        {
-            "area": 20470.0,
-            "bbox": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 165,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L5_1.png",
-            "segmentation": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
-            ]
-        },
-        {
-            "area": 22610.0,
-            "bbox": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 166,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L5_2.png",
-            "segmentation": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
-            ]
-        },
-        {
-            "area": 19080.0,
-            "bbox": [
-                155.0,
-                91.0,
-                180.0,
-                106.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 167,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L2_1.png",
-            "segmentation": [
-                155.0,
-                91.0,
-                180.0,
-                106.0
-            ]
-        },
-        {
-            "area": 23220.0,
-            "bbox": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 168,
-            "image_id": 40,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L2_2.png",
-            "segmentation": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
-            ]
-        },
-        {
-            "area": 15606.0,
-            "bbox": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 169,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L1_1.png",
-            "segmentation": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
-            ]
-        },
-        {
-            "area": 16983.0,
-            "bbox": [
-                157.0,
-                143.0,
-                153.0,
-                111.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 170,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L1_2.png",
-            "segmentation": [
-                157.0,
-                143.0,
-                153.0,
-                111.0
-            ]
-        },
-        {
-            "area": 20414.0,
-            "bbox": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 171,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L4_1.png",
-            "segmentation": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
-            ]
-        },
-        {
-            "area": 18656.0,
-            "bbox": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 172,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L4_2.png",
-            "segmentation": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
-            ]
-        },
-        {
-            "area": 9100.0,
-            "bbox": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 173,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T11_1.png",
-            "segmentation": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
-            ]
-        },
-        {
-            "area": 8554.0,
-            "bbox": [
-                166.0,
-                51.0,
-                94.0,
-                91.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 174,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T11_2.png",
-            "segmentation": [
-                166.0,
-                51.0,
-                94.0,
-                91.0
-            ]
-        },
-        {
-            "area": 18228.0,
-            "bbox": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 175,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L3_1.png",
-            "segmentation": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
-            ]
-        },
-        {
-            "area": 18414.0,
-            "bbox": [
-                159.0,
-                256.0,
-                186.0,
-                99.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 176,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L3_2.png",
-            "segmentation": [
-                159.0,
-                256.0,
-                186.0,
-                99.0
-            ]
-        },
-        {
-            "area": 17745.0,
-            "bbox": [
-                191.0,
-                265.0,
-                169.0,
-                105.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 177,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L2_1.png",
-            "segmentation": [
-                191.0,
-                265.0,
-                169.0,
-                105.0
-            ]
-        },
-        {
-            "area": 18530.0,
-            "bbox": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 178,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L2_2.png",
-            "segmentation": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
-            ]
-        },
-        {
-            "area": 15225.0,
-            "bbox": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 179,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L5_1.png",
-            "segmentation": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
-            ]
-        },
-        {
-            "area": 21120.0,
-            "bbox": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 180,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L5_2.png",
-            "segmentation": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
-            ]
-        },
-        {
-            "area": 9435.0,
-            "bbox": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 181,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T10_1.png",
-            "segmentation": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
-            ]
-        },
-        {
-            "area": 9328.0,
-            "bbox": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 182,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T10_2.png",
-            "segmentation": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
-            ]
-        },
-        {
-            "area": 9310.0,
-            "bbox": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 183,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T12_1.png",
-            "segmentation": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
-            ]
-        },
-        {
-            "area": 9400.0,
-            "bbox": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 184,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T12_2.png",
-            "segmentation": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
-            ]
-        },
-        {
-            "area": 10070.0,
-            "bbox": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 185,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T9_1.png",
-            "segmentation": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
-            ]
-        },
-        {
-            "area": 5643.0,
-            "bbox": [
-                151.0,
-                0.0,
-                99.0,
-                57.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 186,
-            "image_id": 42,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T9_2.png",
-            "segmentation": [
-                151.0,
-                0.0,
-                99.0,
-                57.0
-            ]
-        },
-        {
-            "area": 14746.0,
-            "bbox": [
-                150.0,
-                186.0,
-                146.0,
-                101.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 187,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L1_1.png",
-            "segmentation": [
-                150.0,
-                186.0,
-                146.0,
-                101.0
-            ]
-        },
-        {
-            "area": 17493.0,
-            "bbox": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 188,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L1_2.png",
-            "segmentation": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
-            ]
-        },
-        {
-            "area": 18144.0,
-            "bbox": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 189,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L4_1.png",
-            "segmentation": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
-            ]
-        },
-        {
-            "area": 17900.0,
-            "bbox": [
-                167.0,
-                279.0,
-                179.0,
-                100.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 190,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L4_2.png",
-            "segmentation": [
-                167.0,
-                279.0,
-                179.0,
-                100.0
-            ]
-        },
-        {
-            "area": 12672.0,
-            "bbox": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 191,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T11_1.png",
-            "segmentation": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
-            ]
-        },
-        {
-            "area": 14256.0,
-            "bbox": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 192,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T11_2.png",
-            "segmentation": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
-            ]
-        },
-        {
-            "area": 15444.0,
-            "bbox": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 193,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L3_1.png",
-            "segmentation": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
-            ]
-        },
-        {
-            "area": 17490.0,
-            "bbox": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 194,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L3_2.png",
-            "segmentation": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
-            ]
-        },
-        {
-            "area": 15759.0,
-            "bbox": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 195,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L2_1.png",
-            "segmentation": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
-            ]
-        },
-        {
-            "area": 19680.0,
-            "bbox": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 196,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L2_2.png",
-            "segmentation": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
-            ]
-        },
-        {
-            "area": 16779.0,
-            "bbox": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 197,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L5_1.png",
-            "segmentation": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
-            ]
-        },
-        {
-            "area": 16432.0,
-            "bbox": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 198,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L5_2.png",
-            "segmentation": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
-            ]
-        },
-        {
-            "area": 11303.0,
-            "bbox": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 199,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T10_1.png",
-            "segmentation": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
-            ]
-        },
-        {
-            "area": 6000.0,
-            "bbox": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 200,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T10_2.png",
-            "segmentation": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
-            ]
-        },
-        {
-            "area": 12920.0,
-            "bbox": [
-                141.0,
-                134.0,
-                136.0,
-                95.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 201,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T12_1.png",
-            "segmentation": [
-                141.0,
-                134.0,
-                136.0,
-                95.0
-            ]
-        },
-        {
-            "area": 15042.0,
-            "bbox": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 202,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T12_2.png",
-            "segmentation": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
-            ]
-        },
-        {
-            "area": 8246.0,
-            "bbox": [
-                127.0,
-                0.0,
-                133.0,
-                62.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 203,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T9_1.png",
-            "segmentation": [
-                127.0,
-                0.0,
-                133.0,
-                62.0
-            ]
-        },
-        {
-            "area": 200.0,
-            "bbox": [
-                104.0,
-                0.0,
-                20.0,
-                10.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 204,
-            "image_id": 44,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T9_2.png",
-            "segmentation": [
-                104.0,
-                0.0,
-                20.0,
-                10.0
-            ]
-        },
-        {
-            "area": 18422.0,
-            "bbox": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 205,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L1_1.png",
-            "segmentation": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
-            ]
-        },
-        {
-            "area": 17020.0,
-            "bbox": [
-                148.0,
-                0.0,
-                148.0,
-                115.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 206,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L1_2.png",
-            "segmentation": [
-                148.0,
-                0.0,
-                148.0,
-                115.0
-            ]
-        },
-        {
-            "area": 21090.0,
-            "bbox": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 207,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L3_1.png",
-            "segmentation": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
-            ]
-        },
-        {
-            "area": 20792.0,
-            "bbox": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 208,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L3_2.png",
-            "segmentation": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
-            ]
-        },
-        {
-            "area": 23474.0,
-            "bbox": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 209,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L4_1.png",
-            "segmentation": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
-            ]
-        },
-        {
-            "area": 21534.0,
-            "bbox": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 210,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L4_2.png",
-            "segmentation": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
-            ]
-        },
-        {
-            "area": 26496.0,
-            "bbox": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 211,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L5_1.png",
-            "segmentation": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
-            ]
-        },
-        {
-            "area": 23805.0,
-            "bbox": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 212,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L5_2.png",
-            "segmentation": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
-            ]
-        },
-        {
-            "area": 19754.0,
-            "bbox": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 213,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L2_1.png",
-            "segmentation": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
-            ]
-        },
-        {
-            "area": 21812.0,
-            "bbox": [
-                145.0,
-                37.0,
-                164.0,
-                133.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 214,
-            "image_id": 46,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L2_2.png",
-            "segmentation": [
-                145.0,
-                37.0,
-                164.0,
-                133.0
-            ]
-        },
-        {
-            "area": 19040.0,
-            "bbox": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 215,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L1_1.png",
-            "segmentation": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
-            ]
-        },
-        {
-            "area": 12616.0,
-            "bbox": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 216,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L1_2.png",
-            "segmentation": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
-            ]
-        },
-        {
-            "area": 20832.0,
-            "bbox": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 217,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L3_1.png",
-            "segmentation": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
-            ]
-        },
-        {
-            "area": 25344.0,
-            "bbox": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 218,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L3_2.png",
-            "segmentation": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
-            ]
-        },
-        {
-            "area": 19950.0,
-            "bbox": [
-                150.0,
-                209.0,
-                190.0,
-                105.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 219,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L4_1.png",
-            "segmentation": [
-                150.0,
-                209.0,
-                190.0,
-                105.0
-            ]
-        },
-        {
-            "area": 22458.0,
-            "bbox": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 220,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L4_2.png",
-            "segmentation": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
-            ]
-        },
-        {
-            "area": 20470.0,
-            "bbox": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 221,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L5_1.png",
-            "segmentation": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
-            ]
-        },
-        {
-            "area": 22610.0,
-            "bbox": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 222,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L5_2.png",
-            "segmentation": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
-            ]
-        },
-        {
-            "area": 19080.0,
-            "bbox": [
-                155.0,
-                91.0,
-                180.0,
-                106.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 223,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L2_1.png",
-            "segmentation": [
-                155.0,
-                91.0,
-                180.0,
-                106.0
-            ]
-        },
-        {
-            "area": 23220.0,
-            "bbox": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 224,
-            "image_id": 48,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L2_2.png",
-            "segmentation": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
-            ]
-        },
-        {
-            "area": 15606.0,
-            "bbox": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 225,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L1_1.png",
-            "segmentation": [
-                191.0,
-                217.0,
-                153.0,
-                102.0
-            ]
-        },
-        {
-            "area": 16983.0,
-            "bbox": [
-                157.0,
-                143.0,
-                153.0,
-                111.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 226,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L1_2.png",
-            "segmentation": [
-                157.0,
-                143.0,
-                153.0,
-                111.0
-            ]
-        },
-        {
-            "area": 20414.0,
-            "bbox": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 227,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L4_1.png",
-            "segmentation": [
-                211.0,
-                374.0,
-                173.0,
-                118.0
-            ]
-        },
-        {
-            "area": 18656.0,
-            "bbox": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 228,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L4_2.png",
-            "segmentation": [
-                170.0,
-                307.0,
-                176.0,
-                106.0
-            ]
-        },
-        {
-            "area": 9100.0,
-            "bbox": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 229,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T11_1.png",
-            "segmentation": [
-                190.0,
-                111.0,
-                100.0,
-                91.0
-            ]
-        },
-        {
-            "area": 8554.0,
-            "bbox": [
-                166.0,
-                51.0,
-                94.0,
-                91.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 230,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T11_2.png",
-            "segmentation": [
-                166.0,
-                51.0,
-                94.0,
-                91.0
-            ]
-        },
-        {
-            "area": 18228.0,
-            "bbox": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 231,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L3_1.png",
-            "segmentation": [
-                196.0,
-                323.0,
-                186.0,
-                98.0
-            ]
-        },
-        {
-            "area": 18414.0,
-            "bbox": [
-                159.0,
-                256.0,
-                186.0,
-                99.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 232,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L3_2.png",
-            "segmentation": [
-                159.0,
-                256.0,
-                186.0,
-                99.0
-            ]
-        },
-        {
-            "area": 17745.0,
-            "bbox": [
-                191.0,
-                265.0,
-                169.0,
-                105.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 233,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L2_1.png",
-            "segmentation": [
-                191.0,
-                265.0,
-                169.0,
-                105.0
-            ]
-        },
-        {
-            "area": 18530.0,
-            "bbox": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 234,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L2_2.png",
-            "segmentation": [
-                155.0,
-                194.0,
-                170.0,
-                109.0
-            ]
-        },
-        {
-            "area": 15225.0,
-            "bbox": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 235,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L5_1.png",
-            "segmentation": [
-                222.0,
-                425.0,
-                175.0,
-                87.0
-            ]
-        },
-        {
-            "area": 21120.0,
-            "bbox": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 236,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_L5_2.png",
-            "segmentation": [
-                179.0,
-                359.0,
-                176.0,
-                120.0
-            ]
-        },
-        {
-            "area": 9435.0,
-            "bbox": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 237,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T10_1.png",
-            "segmentation": [
-                181.0,
-                61.0,
-                111.0,
-                85.0
-            ]
-        },
-        {
-            "area": 9328.0,
-            "bbox": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 238,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T10_2.png",
-            "segmentation": [
-                160.0,
-                5.0,
-                106.0,
-                88.0
-            ]
-        },
-        {
-            "area": 9310.0,
-            "bbox": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 239,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T12_1.png",
-            "segmentation": [
-                200.0,
-                168.0,
-                98.0,
-                95.0
-            ]
-        },
-        {
-            "area": 9400.0,
-            "bbox": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 240,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T12_2.png",
-            "segmentation": [
-                174.0,
-                102.0,
-                94.0,
-                100.0
-            ]
-        },
-        {
-            "area": 10070.0,
-            "bbox": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 241,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T9_1.png",
-            "segmentation": [
-                173.0,
-                14.0,
-                106.0,
-                95.0
-            ]
-        },
-        {
-            "area": 5643.0,
-            "bbox": [
-                151.0,
-                0.0,
-                99.0,
-                57.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 242,
-            "image_id": 50,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_AP_T9_2.png",
-            "segmentation": [
-                151.0,
-                0.0,
-                99.0,
-                57.0
-            ]
-        },
-        {
-            "area": 14746.0,
-            "bbox": [
-                150.0,
-                186.0,
-                146.0,
-                101.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 243,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L1_1.png",
-            "segmentation": [
-                150.0,
-                186.0,
-                146.0,
-                101.0
-            ]
-        },
-        {
-            "area": 17493.0,
-            "bbox": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 244,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L1_2.png",
-            "segmentation": [
-                139.0,
-                102.0,
-                147.0,
-                119.0
-            ]
-        },
-        {
-            "area": 18144.0,
-            "bbox": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 245,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L4_1.png",
-            "segmentation": [
-                166.0,
-                340.0,
-                168.0,
-                108.0
-            ]
-        },
-        {
-            "area": 17900.0,
-            "bbox": [
-                167.0,
-                279.0,
-                179.0,
-                100.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 246,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L4_2.png",
-            "segmentation": [
-                167.0,
-                279.0,
-                179.0,
-                100.0
-            ]
-        },
-        {
-            "area": 12672.0,
-            "bbox": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 247,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T11_1.png",
-            "segmentation": [
-                136.0,
-                69.0,
-                132.0,
-                96.0
-            ]
-        },
-        {
-            "area": 14256.0,
-            "bbox": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
-            ],
-            "category_id": 8,
-            "category_name": "T11",
-            "id": 248,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T11_2.png",
-            "segmentation": [
-                118.0,
-                0.0,
-                132.0,
-                108.0
-            ]
-        },
-        {
-            "area": 15444.0,
-            "bbox": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 249,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L3_1.png",
-            "segmentation": [
-                167.0,
-                291.0,
-                156.0,
-                99.0
-            ]
-        },
-        {
-            "area": 17490.0,
-            "bbox": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 250,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L3_2.png",
-            "segmentation": [
-                166.0,
-                222.0,
-                165.0,
-                106.0
-            ]
-        },
-        {
-            "area": 15759.0,
-            "bbox": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 251,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L2_1.png",
-            "segmentation": [
-                160.0,
-                235.0,
-                153.0,
-                103.0
-            ]
-        },
-        {
-            "area": 19680.0,
-            "bbox": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 252,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L2_2.png",
-            "segmentation": [
-                153.0,
-                151.0,
-                160.0,
-                123.0
-            ]
-        },
-        {
-            "area": 16779.0,
-            "bbox": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 253,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L5_1.png",
-            "segmentation": [
-                159.0,
-                389.0,
-                141.0,
-                119.0
-            ]
-        },
-        {
-            "area": 16432.0,
-            "bbox": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 254,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_L5_2.png",
-            "segmentation": [
-                162.0,
-                337.0,
-                158.0,
-                104.0
-            ]
-        },
-        {
-            "area": 11303.0,
-            "bbox": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 255,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T10_1.png",
-            "segmentation": [
-                133.0,
-                15.0,
-                127.0,
-                89.0
-            ]
-        },
-        {
-            "area": 6000.0,
-            "bbox": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
-            ],
-            "category_id": 9,
-            "category_name": "T10",
-            "id": 256,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T10_2.png",
-            "segmentation": [
-                112.0,
-                0.0,
-                125.0,
-                48.0
-            ]
-        },
-        {
-            "area": 12920.0,
-            "bbox": [
-                141.0,
-                134.0,
-                136.0,
-                95.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 257,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T12_1.png",
-            "segmentation": [
-                141.0,
-                134.0,
-                136.0,
-                95.0
-            ]
-        },
-        {
-            "area": 15042.0,
-            "bbox": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
-            ],
-            "category_id": 7,
-            "category_name": "T12",
-            "id": 258,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T12_2.png",
-            "segmentation": [
-                127.0,
-                59.0,
-                138.0,
-                109.0
-            ]
-        },
-        {
-            "area": 8246.0,
-            "bbox": [
-                127.0,
-                0.0,
-                133.0,
-                62.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 259,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T9_1.png",
-            "segmentation": [
-                127.0,
-                0.0,
-                133.0,
-                62.0
-            ]
-        },
-        {
-            "area": 200.0,
-            "bbox": [
-                104.0,
-                0.0,
-                20.0,
-                10.0
-            ],
-            "category_id": 10,
-            "category_name": "T9",
-            "id": 260,
-            "image_id": 52,
-            "iscrowd": 0,
-            "mask_file_name": "verse004_LA_T9_2.png",
-            "segmentation": [
-                104.0,
-                0.0,
-                20.0,
-                10.0
-            ]
-        },
-        {
-            "area": 18422.0,
-            "bbox": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 261,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L1_1.png",
-            "segmentation": [
-                172.0,
-                49.0,
-                151.0,
-                122.0
-            ]
-        },
-        {
-            "area": 17020.0,
-            "bbox": [
-                148.0,
-                0.0,
-                148.0,
-                115.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 262,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L1_2.png",
-            "segmentation": [
-                148.0,
-                0.0,
-                148.0,
-                115.0
-            ]
-        },
-        {
-            "area": 21090.0,
-            "bbox": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 263,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L3_1.png",
-            "segmentation": [
-                177.0,
-                179.0,
-                185.0,
-                114.0
-            ]
-        },
-        {
-            "area": 20792.0,
-            "bbox": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 264,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L3_2.png",
-            "segmentation": [
-                146.0,
-                112.0,
-                184.0,
-                113.0
-            ]
-        },
-        {
-            "area": 23474.0,
-            "bbox": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 265,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L4_1.png",
-            "segmentation": [
-                179.0,
-                236.0,
-                194.0,
-                121.0
-            ]
-        },
-        {
-            "area": 21534.0,
-            "bbox": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 266,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L4_2.png",
-            "segmentation": [
-                146.0,
-                169.0,
-                194.0,
-                111.0
-            ]
-        },
-        {
-            "area": 26496.0,
-            "bbox": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 267,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L5_1.png",
-            "segmentation": [
-                185.0,
-                301.0,
-                207.0,
-                128.0
-            ]
-        },
-        {
-            "area": 23805.0,
-            "bbox": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 268,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L5_2.png",
-            "segmentation": [
-                149.0,
-                235.0,
-                207.0,
-                115.0
-            ]
-        },
-        {
-            "area": 19754.0,
-            "bbox": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 269,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L2_1.png",
-            "segmentation": [
-                172.0,
-                112.0,
-                166.0,
-                119.0
-            ]
-        },
-        {
-            "area": 21812.0,
-            "bbox": [
-                145.0,
-                37.0,
-                164.0,
-                133.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 270,
-            "image_id": 54,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_AP_L2_2.png",
-            "segmentation": [
-                145.0,
-                37.0,
-                164.0,
-                133.0
-            ]
-        },
-        {
-            "area": 19040.0,
-            "bbox": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 271,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L1_1.png",
-            "segmentation": [
-                146.0,
-                21.0,
-                170.0,
-                112.0
-            ]
-        },
-        {
-            "area": 12616.0,
-            "bbox": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
-            ],
-            "category_id": 6,
-            "category_name": "L1",
-            "id": 272,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L1_2.png",
-            "segmentation": [
-                126.0,
-                0.0,
-                166.0,
-                76.0
-            ]
-        },
-        {
-            "area": 20832.0,
-            "bbox": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 273,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L3_1.png",
-            "segmentation": [
-                159.0,
-                150.0,
-                186.0,
-                112.0
-            ]
-        },
-        {
-            "area": 25344.0,
-            "bbox": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
-            ],
-            "category_id": 4,
-            "category_name": "L3",
-            "id": 274,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L3_2.png",
-            "segmentation": [
-                146.0,
-                72.0,
-                192.0,
-                132.0
-            ]
-        },
-        {
-            "area": 19950.0,
-            "bbox": [
-                150.0,
-                209.0,
-                190.0,
-                105.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 275,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L4_1.png",
-            "segmentation": [
-                150.0,
-                209.0,
-                190.0,
-                105.0
-            ]
-        },
-        {
-            "area": 22458.0,
-            "bbox": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
-            ],
-            "category_id": 3,
-            "category_name": "L4",
-            "id": 276,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L4_2.png",
-            "segmentation": [
-                140.0,
-                134.0,
-                197.0,
-                114.0
-            ]
-        },
-        {
-            "area": 20470.0,
-            "bbox": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 277,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L5_1.png",
-            "segmentation": [
-                144.0,
-                271.0,
-                178.0,
-                115.0
-            ]
-        },
-        {
-            "area": 22610.0,
-            "bbox": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
-            ],
-            "category_id": 2,
-            "category_name": "L5",
-            "id": 278,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L5_2.png",
-            "segmentation": [
-                137.0,
-                193.0,
-                190.0,
-                119.0
-            ]
-        },
-        {
-            "area": 19080.0,
-            "bbox": [
-                155.0,
-                91.0,
-                180.0,
-                106.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 279,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L2_1.png",
-            "segmentation": [
-                155.0,
-                91.0,
-                180.0,
-                106.0
-            ]
-        },
-        {
-            "area": 23220.0,
-            "bbox": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
-            ],
-            "category_id": 5,
-            "category_name": "L2",
-            "id": 280,
-            "image_id": 56,
-            "iscrowd": 0,
-            "mask_file_name": "verse005_LA_L2_2.png",
-            "segmentation": [
-                139.0,
-                8.0,
-                180.0,
-                129.0
+                117.0
             ]
         }
     ],
@@ -5941,14 +1237,14 @@
             "height": 512,
             "id": 1,
             "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
+                88.24313451603848,
+                175.79361430129185,
+                173.11212953243208
             ],
             "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
+                4.333685249674758,
+                -26.570367169855235,
+                -6.168415557597946
             ],
             "width": 512
         },
@@ -5959,14 +1255,14 @@
             "height": 512,
             "id": 2,
             "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
+                85.44923148966346,
+                171.25304009148297,
+                184.47438977017114
             ],
             "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
+                8.084658740174127,
+                -5.855756010945562,
+                -12.001706583145985
             ],
             "width": 512
         },
@@ -5977,14 +1273,14 @@
             "height": 512,
             "id": 3,
             "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
+                81.97000983729917,
+                194.8132334013546,
+                104.416441927563
             ],
             "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
+                0.5087107428448014,
+                -17.422742071501055,
+                10.477327062680878
             ],
             "width": 512
         },
@@ -5995,14 +1291,14 @@
             "height": 512,
             "id": 4,
             "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
+                97.7192825949275,
+                187.64460940873337,
+                88.55264497984263
             ],
             "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
+                15.643158581287636,
+                -11.717897792684017,
+                25.21948505289786
             ],
             "width": 512
         },
@@ -6013,14 +1309,14 @@
             "height": 512,
             "id": 5,
             "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
+                88.24313451603848,
+                175.79361430129185,
+                173.11212953243208
             ],
             "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
+                4.333685249674758,
+                -26.570367169855235,
+                -6.168415557597946
             ],
             "width": 512
         },
@@ -6031,14 +1327,14 @@
             "height": 512,
             "id": 6,
             "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
+                85.44923148966346,
+                171.25304009148297,
+                184.47438977017114
             ],
             "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
+                8.084658740174127,
+                -5.855756010945562,
+                -12.001706583145985
             ],
             "width": 512
         },
@@ -6049,14 +1345,14 @@
             "height": 512,
             "id": 7,
             "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
+                81.97000983729917,
+                194.8132334013546,
+                104.416441927563
             ],
             "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
+                0.5087107428448014,
+                -17.422742071501055,
+                10.477327062680878
             ],
             "width": 512
         },
@@ -6067,885 +1363,21 @@
             "height": 512,
             "id": 8,
             "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
+                97.7192825949275,
+                187.64460940873337,
+                88.55264497984263
             ],
             "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_1.png",
-            "height": 512,
-            "id": 9,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_2.png",
-            "height": 512,
-            "id": 10,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_1.png",
-            "height": 512,
-            "id": 11,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_2.png",
-            "height": 512,
-            "id": 12,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_1.png",
-            "height": 512,
-            "id": 13,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_2.png",
-            "height": 512,
-            "id": 14,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_1.png",
-            "height": 512,
-            "id": 15,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_2.png",
-            "height": 512,
-            "id": 16,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_1.png",
-            "height": 512,
-            "id": 17,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_2.png",
-            "height": 512,
-            "id": 18,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_1.png",
-            "height": 512,
-            "id": 19,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_2.png",
-            "height": 512,
-            "id": 20,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_1.png",
-            "height": 512,
-            "id": 21,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_2.png",
-            "height": 512,
-            "id": 22,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_1.png",
-            "height": 512,
-            "id": 23,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_2.png",
-            "height": 512,
-            "id": 24,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_1.png",
-            "height": 512,
-            "id": 25,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_2.png",
-            "height": 512,
-            "id": 26,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_1.png",
-            "height": 512,
-            "id": 27,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_2.png",
-            "height": 512,
-            "id": 28,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_1.png",
-            "height": 512,
-            "id": 29,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_2.png",
-            "height": 512,
-            "id": 30,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_1.png",
-            "height": 512,
-            "id": 31,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_2.png",
-            "height": 512,
-            "id": 32,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_1.png",
-            "height": 512,
-            "id": 33,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_2.png",
-            "height": 512,
-            "id": 34,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_1.png",
-            "height": 512,
-            "id": 35,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_2.png",
-            "height": 512,
-            "id": 36,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_1.png",
-            "height": 512,
-            "id": 37,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_2.png",
-            "height": 512,
-            "id": 38,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_1.png",
-            "height": 512,
-            "id": 39,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_2.png",
-            "height": 512,
-            "id": 40,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_1.png",
-            "height": 512,
-            "id": 41,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_2.png",
-            "height": 512,
-            "id": 42,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_1.png",
-            "height": 512,
-            "id": 43,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_2.png",
-            "height": 512,
-            "id": 44,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_1.png",
-            "height": 512,
-            "id": 45,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_2.png",
-            "height": 512,
-            "id": 46,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_1.png",
-            "height": 512,
-            "id": 47,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_2.png",
-            "height": 512,
-            "id": 48,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_1.png",
-            "height": 512,
-            "id": 49,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_AP_2.png",
-            "height": 512,
-            "id": 50,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_1.png",
-            "height": 512,
-            "id": 51,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse004.nii.nii.gz",
-            "file_name": "verse004_LA_2.png",
-            "height": 512,
-            "id": 52,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_1.png",
-            "height": 512,
-            "id": 53,
-            "rotation": [
-                88.10715896029005,
-                168.7408013537937,
-                189.5654902473055
-            ],
-            "translation": [
-                -2.254920032671105,
-                -10.78510922571089,
-                25.072737262473453
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "AP",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_AP_2.png",
-            "height": 512,
-            "id": 54,
-            "rotation": [
-                91.77569761961483,
-                171.60401119214774,
-                183.81787303382023
-            ],
-            "translation": [
-                7.861547059701103,
-                -17.057585718142846,
-                -12.228933099673096
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_1.png",
-            "height": 512,
-            "id": 55,
-            "rotation": [
-                83.54037323959514,
-                181.0751671623435,
-                103.30713319831234
-            ],
-            "translation": [
-                -6.205816267407574,
-                -20.330909316021454,
-                8.562676626874122
-            ],
-            "width": 512
-        },
-        {
-            "APorLA": "LA",
-            "ct_name": "verse005.nii.nii.gz",
-            "file_name": "verse005_LA_2.png",
-            "height": 512,
-            "id": 56,
-            "rotation": [
-                99.47946943471877,
-                175.55847365653207,
-                99.25417280363308
-            ],
-            "translation": [
-                16.120104334008886,
-                -16.003387517394625,
-                -27.133024093679236
+                15.643158581287636,
+                -11.717897792684017,
+                25.21948505289786
             ],
             "width": 512
         }
     ],
     "info": {
         "dataset_info": {
-            "Date": "2024-06-22",
+            "Date": "2024-07-28",
             "contributor": "ShuaiLei",
             "description": "Spine Detection DataSet",
             "url": "https://github.com/ThreeStones1029",
@@ -7026,50 +1458,50 @@
         "rotations_and_translations": {
             "AP_rotations": [
                 [
-                    88.10715896029005,
-                    168.7408013537937,
-                    189.5654902473055
+                    88.24313451603848,
+                    175.79361430129185,
+                    173.11212953243208
                 ],
                 [
-                    91.77569761961483,
-                    171.60401119214774,
-                    183.81787303382023
+                    85.44923148966346,
+                    171.25304009148297,
+                    184.47438977017114
                 ]
             ],
             "AP_translations": [
                 [
-                    -2.254920032671105,
-                    -10.78510922571089,
-                    25.072737262473453
+                    4.333685249674758,
+                    -26.570367169855235,
+                    -6.168415557597946
                 ],
                 [
-                    7.861547059701103,
-                    -17.057585718142846,
-                    -12.228933099673096
+                    8.084658740174127,
+                    -5.855756010945562,
+                    -12.001706583145985
                 ]
             ],
             "LA_rotations": [
                 [
-                    83.54037323959514,
-                    181.0751671623435,
-                    103.30713319831234
+                    81.97000983729917,
+                    194.8132334013546,
+                    104.416441927563
                 ],
                 [
-                    99.47946943471877,
-                    175.55847365653207,
-                    99.25417280363308
+                    97.7192825949275,
+                    187.64460940873337,
+                    88.55264497984263
                 ]
             ],
             "LA_translations": [
                 [
-                    -6.205816267407574,
-                    -20.330909316021454,
-                    8.562676626874122
+                    0.5087107428448014,
+                    -17.422742071501055,
+                    10.477327062680878
                 ],
                 [
-                    16.120104334008886,
-                    -16.003387517394625,
-                    -27.133024093679236
+                    15.643158581287636,
+                    -11.717897792684017,
+                    25.21948505289786
                 ]
             ]
         }

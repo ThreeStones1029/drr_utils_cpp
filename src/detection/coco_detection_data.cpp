@@ -73,7 +73,7 @@ void COCODetectionData::add_categories() {
     }
 }
 
-void COCODetectionData::add_annotation(const std::string& mask_file_name, int category_id, 
+void COCODetectionData::add_annotation(const std::string& mask_file_name, int category_id, int image_id,
                                        const std::string& category_name, 
                                        const std::vector<double>& bbox, 
                                        const std::vector<double>& rotation_bbox, 
@@ -83,7 +83,7 @@ void COCODetectionData::add_annotation(const std::string& mask_file_name, int ca
     nlohmann::json annotation = {
         {"mask_file_name", mask_file_name},
         {"id", annotation_num},
-        {"image_id", image_num},
+        {"image_id", image_id},
         {"category_id", category_id},
         {"category_name", category_name},
         {"area", bbox[2] * bbox[3]},

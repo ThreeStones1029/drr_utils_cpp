@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @version: 
+ * @Author: ThreeStones1029 2320218115@qq.com
+ * @Date: 2024-05-24 14:40:20
+ * @LastEditors: ShuaiLei
+ * @LastEditTime: 2024-07-28 14:25:22
+ */
 #ifndef COCO_DETECTION_DATA_H
 #define COCO_DETECTION_DATA_H
 #include <yaml-cpp/yaml.h>
@@ -16,7 +24,7 @@ public:
 
     void add_categories();
 
-    void add_annotation(const std::string& mask_file_name, int category_id, 
+    void add_annotation(const std::string& mask_file_name, int category_id, int image_id,
                         const std::string& category_name, 
                         const std::vector<double>& bbox, 
                         const std::vector<double>& rotation_bbox, 

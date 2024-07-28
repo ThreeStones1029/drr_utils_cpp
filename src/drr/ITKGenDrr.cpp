@@ -249,7 +249,7 @@ int GenerateDrrs(const std::string& ct_file_path, const std::vector<std::vector<
 int GenerateMasks(const std::string& ct_name, const std::vector<std::string>& seg_filepaths, const std::vector<std::vector<double>>& rotations, 
                   const std::vector<std::vector<double>>& translations, bool save_img, double sid_value, 
                   double sx_value, double sy_value, int dx_value, int dy_value, double threshold_value, 
-                  const std::string& APorLA, const std::string& save_images_folder, const std::unique_ptr<COCODetectionData>& detection_dataset) {
+                  const std::string& APorLA, const std::string& save_images_folder, const std::unique_ptr<COCODetectionData>& detection_dataset, int start_image_id) {
 	double cx = 0.0;
 	double cy = 0.0;
 	double cz = 0.0;
@@ -300,9 +300,11 @@ int GenerateMasks(const std::string& ct_name, const std::vector<std::string>& se
 		std::string mask_name = mask_name_with_seg.substr(0, mask_name_with_seg.size() - 4);
 		std::vector<std::string> parts = splitString(mask_name_with_seg, '_');
 		std::string category_name = parts[0];
+		int image_id = start_image_id;
 		for (int i = 0; i < rotations.size(); i++) {
 			std::string image_name = ct_name  + "_" + APorLA + "_" + mask_name + "_" + std::to_string(i + 1) + ".png";
 			std::string save_path = save_images_folder + "/" + image_name;
+			image_id += 1;
 			// 添加标注
 			double rx = rotations[i][0];
 			double ry = rotations[i][1];
@@ -399,7 +401,7 @@ int GenerateMasks(const std::string& ct_name, const std::vector<std::string>& se
 				int category_id = detection_dataset->catname2catid[category_name];
 				const std::vector<double> bbox = BoundingBoxTo2DVector(boundingBox);
 				// std::vector<double> rotation_bbox = GetMinimumRotationBox(filter->GetOutput());
-				detection_dataset->add_annotation(image_name, category_id, category_name, bbox, bbox, 0);
+				detection_dataset->add_annotation(image_name, category_id, image_id, category_name, bbox, bbox, 0);
 			}
 		}
 	}

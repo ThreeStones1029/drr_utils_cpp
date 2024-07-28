@@ -24,7 +24,7 @@ public:
                                                                                                               int num_samples);
     void gen_multple_cts_drrs_and_masks();
     void check_sub_folders(const std::vector<std::string>& sub_folder_paths);
-    void gen_drrs_and_masks(const std::string& ct_path);
+    void gen_drrs_and_masks(const std::string& ct_path, int ct_id);
 
 private:
     YAML::Node config; 

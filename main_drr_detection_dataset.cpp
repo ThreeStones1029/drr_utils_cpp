@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-01 14:09:34
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-07-27 15:04:03
+ * @LastEditTime: 2024-07-28 13:34:09
  */
 #include <iostream>
 #include <filesystem>
@@ -59,5 +59,12 @@ int main(int argc,char** argv){
    GenDetectionDataset drr_detection_dataset(config);
    drr_detection_dataset.gen_multple_cts_drrs_and_masks();
    bool is_vis = config["vis_parameter"]["is_vis"].as<bool>();
+   // if (is_vis) {
+   //    vis_image_label = VisCoCo(config.dataset_json_path, config.dataset_images_path, config.vis_parameter["vis_save_path"], config.vis_parameter["rotation_bbox_vis_save_path"])
+   //    vis_image_label.visualize_bboxes_in_images()
+   //    // 旋转框可视化
+   //    vis_image_label.visualize_rotate_bboxes_in_images()
+   // }
+   std::cout << is_vis <<std::endl;
    return 0;
 }

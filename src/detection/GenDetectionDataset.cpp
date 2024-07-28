@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-07-27 15:03:01
+ * @LastEditTime: 2024-07-28 14:39:53
  */
 #include "GenDetectionDataset.h"
 #include "coco_detection_data.h"
@@ -99,6 +99,7 @@ std::tuple<std::vector<std::vector<double>>, std::vector<std::vector<double>>> G
 void GenDetectionDataset::gen_multple_cts_drrs_and_masks() {
     auto total_start_time = std::chrono::high_resolution_clock::now();
     std::vector<std::string> ct_path_list = getSubFolderPaths(ct_root_path);
+    int ct_id = 0;
     for (const auto& single_ct_path : ct_path_list) {
         std::string ct_name = std::filesystem::path(single_ct_path).filename().string();
         if (std::filesystem::exists(dataset_json_path)) {
@@ -121,7 +122,8 @@ void GenDetectionDataset::gen_multple_cts_drrs_and_masks() {
             else {
                 height = config["projection_parameter"]["height"].as<float>();
             } 
-            gen_drrs_and_masks(single_ct_path);  // Replace with actual bbox label type
+            gen_drrs_and_masks(single_ct_path, ct_id);  // Replace with actual bbox label type
+            ct_id += 1;
             detection_dataset->to_json(dataset_json_path);
         }
     }
@@ -140,7 +142,7 @@ void GenDetectionDataset::check_sub_folders(const std::vector<std::string>& sub_
 }
 
 
-void GenDetectionDataset::gen_drrs_and_masks(const std::string& ct_path) {
+void GenDetectionDataset::gen_drrs_and_masks(const std::string& ct_path, int ct_id) {
     // 获取CT名称
     std::string ct_name = std::filesystem::path(ct_path).filename().string();
     std::string ct_filepath = std::filesystem::path(ct_path) / (ct_name + ".nii.gz");
@@ -151,9 +153,23 @@ void GenDetectionDataset::gen_drrs_and_masks(const std::string& ct_path) {
     // if AP_bbox_label_type is big, it will generate big bbox according overall vertebrae.
     if (AP_bbox_label_type == "big")
         seg_filepaths = getFilteredFiles(ct_path, "seg.nii.gz", "body_seg.nii.gz");
-    // 同时传入所有seg_filepaths
-    GenerateDrrs(ct_filepath, AP_rotations, AP_translations, true, sdr*2, delx, delx, height, height, threshold, "AP", dataset_images_path, detection_dataset);
-    GenerateMasks(ct_name, seg_filepaths, AP_rotations, AP_translations, false, sdr*2, delx, delx, height, height, threshold, "AP", dataset_masks_path, detection_dataset);
-    GenerateDrrs(ct_filepath, LA_rotations, LA_translations, true, sdr*2, delx, delx, height, height, threshold, "LA", dataset_images_path, detection_dataset);
-    GenerateMasks(ct_name, seg_filepaths, LA_rotations, LA_translations, false, sdr*2, delx, delx, height, height, threshold, "LA", dataset_masks_path, detection_dataset);
+    // std::cout << "print" << std::endl;
+    // for (std::string seg_file_path : seg_filepaths) {
+    //     std::cout << seg_file_path << std::endl;
+    // }
+    // 同时传入所有ct和seg_filepaths
+    std::vector<std::string> ct_and_seg_filepaths(seg_filepaths);
+    ct_and_seg_filepaths.insert(ct_and_seg_filepaths.begin(), ct_filepath);
+    int start_image_id;
+    if (AP_num_samples > 0) {
+        start_image_id = ct_id * (AP_num_samples + LA_num_samples);
+        GenerateDrrs(ct_filepath, AP_rotations, AP_translations, true, sdr*2, delx, delx, height, height, threshold, "AP", dataset_images_path, detection_dataset);
+        GenerateMasks(ct_name, seg_filepaths, AP_rotations, AP_translations, false, sdr*2, delx, delx, height, height, threshold, "AP", dataset_masks_path, detection_dataset, start_image_id);
+    }
+    if (LA_num_samples > 0) {
+        start_image_id = ct_id * (AP_num_samples + LA_num_samples) + AP_num_samples;
+        GenerateDrrs(ct_filepath, LA_rotations, LA_translations, true, sdr*2, delx, delx, height, height, threshold, "LA", dataset_images_path, detection_dataset);
+        GenerateMasks(ct_name, seg_filepaths, LA_rotations, LA_translations, false, sdr*2, delx, delx, height, height, threshold, "LA", dataset_masks_path, detection_dataset, start_image_id);
+    }
+    
 }
