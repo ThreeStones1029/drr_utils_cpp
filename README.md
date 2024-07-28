@@ -63,6 +63,7 @@ sudo make install
 <summary>Run</summary>
 
 ```bash
+mkdir build
 cd build
 cmake ..
 make
