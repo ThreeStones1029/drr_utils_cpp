@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-01 14:16:03
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-07-13 13:06:19
+ * @LastEditTime: 2024-07-29 02:27:54
 -->
 <h2 align="center">Deep Learning Spine DRR Toolkit Cpp</h2>
 <p align="center">
@@ -56,6 +56,9 @@ git clone https://github.com/lava/matplotlib-cpp.git
 cd matplotlib-cpp && mkdir build && cd build
 cmake ..
 sudo make install
+
+# install opencv
+sudo apt-get install libopencv-dev
 ```
 </details>
 
