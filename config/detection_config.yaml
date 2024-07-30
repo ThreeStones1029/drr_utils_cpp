@@ -7,7 +7,7 @@ dataset_json_path: ../data/verse2020_test_detection_dataset/detection_data.json
 projection_parameter:
   sdr: 500
   height: 512
-  specific_height_list: {"luyu": 500, "shuailei": 1000}
+  specific_height_list: {"luyu": 2000, "shuailei": 1000}
   delx: 1
   threshold: 0
   AP_num_samples: 2
@@ -22,10 +22,10 @@ projection_parameter:
   # LA_trans_range_list: [[0, 0], [0, 0], [0, 0]]
   AP_bbox_label_type: big
   LA_bbox_label_type: big
-  min_bbox_percentage_of_height: 0.05
+  min_bbox_percentage_of_height: 0.1
 
 
 vis_parameter:
   is_vis: True
-  vis_save_path: data/verse2020_test_detection_dataset/bbox_vis
-  rotation_bbox_vis_save_path: data/verse2020_test_detection_dataset/rotation_bbox_vis # 旋转框可视化
+  vis_save_path: ../data/verse2020_test_detection_dataset/bbox_vis
+  rotation_bbox_vis_save_path: ../data/verse2020_test_detection_dataset/rotation_bbox_vis # 旋转框可视化

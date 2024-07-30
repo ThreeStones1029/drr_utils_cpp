@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-20 07:40:46
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-07-28 14:39:53
+ * @LastEditTime: 2024-07-30 01:56:48
  */
 #include "GenDetectionDataset.h"
 #include "coco_detection_data.h"
@@ -164,12 +164,12 @@ void GenDetectionDataset::gen_drrs_and_masks(const std::string& ct_path, int ct_
     if (AP_num_samples > 0) {
         start_image_id = ct_id * (AP_num_samples + LA_num_samples);
         GenerateDrrs(ct_filepath, AP_rotations, AP_translations, true, sdr*2, delx, delx, height, height, threshold, "AP", dataset_images_path, detection_dataset);
-        GenerateMasks(ct_name, seg_filepaths, AP_rotations, AP_translations, false, sdr*2, delx, delx, height, height, threshold, "AP", dataset_masks_path, detection_dataset, start_image_id);
+        GenerateMasks(ct_name, seg_filepaths, AP_rotations, AP_translations, false, sdr*2, delx, delx, height, height, threshold, min_bbox_percentage_of_height, "AP", dataset_masks_path, detection_dataset, start_image_id);
     }
     if (LA_num_samples > 0) {
         start_image_id = ct_id * (AP_num_samples + LA_num_samples) + AP_num_samples;
         GenerateDrrs(ct_filepath, LA_rotations, LA_translations, true, sdr*2, delx, delx, height, height, threshold, "LA", dataset_images_path, detection_dataset);
-        GenerateMasks(ct_name, seg_filepaths, LA_rotations, LA_translations, false, sdr*2, delx, delx, height, height, threshold, "LA", dataset_masks_path, detection_dataset, start_image_id);
+        GenerateMasks(ct_name, seg_filepaths, LA_rotations, LA_translations, false, sdr*2, delx, delx, height, height, threshold, min_bbox_percentage_of_height, "LA", dataset_masks_path, detection_dataset, start_image_id);
     }
     
 }

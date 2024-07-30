@@ -248,7 +248,7 @@ int GenerateDrrs(const std::string& ct_file_path, const std::vector<std::vector<
 
 int GenerateMasks(const std::string& ct_name, const std::vector<std::string>& seg_filepaths, const std::vector<std::vector<double>>& rotations, 
                   const std::vector<std::vector<double>>& translations, bool save_img, double sid_value, 
-                  double sx_value, double sy_value, int dx_value, int dy_value, double threshold_value, 
+                  double sx_value, double sy_value, int dx_value, int dy_value, double threshold_value, double min_bbox_percentage_of_height,
                   const std::string& APorLA, const std::string& save_images_folder, const std::unique_ptr<COCODetectionData>& detection_dataset, int start_image_id) {
 	double cx = 0.0;
 	double cy = 0.0;
@@ -395,14 +395,13 @@ int GenerateMasks(const std::string& ct_name, const std::vector<std::string>& se
 					std::cerr << err << std::endl;
 				}
 			}
-			else {
-				// 获取图像的最小包围盒
-				itk::ImageRegion<Dimension> boundingBox = GetMinimumBoundingBox(filter->GetOutput());
-				int category_id = detection_dataset->catname2catid[category_name];
-				const std::vector<double> bbox = BoundingBoxTo2DVector(boundingBox);
-				// std::vector<double> rotation_bbox = GetMinimumRotationBox(filter->GetOutput());
+			// 获取图像的最小包围盒
+			itk::ImageRegion<Dimension> boundingBox = GetMinimumBoundingBox(filter->GetOutput());
+			int category_id = detection_dataset->catname2catid[category_name];
+			const std::vector<double> bbox = BoundingBoxTo2DVector(boundingBox);
+			// std::vector<double> rotation_bbox = GetMinimumRotationBox(filter->GetOutput());
+			if (min_bbox_percentage_of_height * sx_value * dx_value > bbox[2] && min_bbox_percentage_of_height * sy_value * dy_value > bbox[3])
 				detection_dataset->add_annotation(image_name, category_id, image_id, category_name, bbox, bbox, 0);
-			}
 		}
 	}
 	return 0;

@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-04-01 14:09:34
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-07-29 09:49:11
+ * @LastEditTime: 2024-07-30 01:46:51
  */
 #include <iostream>
 #include <filesystem>
@@ -63,8 +63,8 @@ int main(int argc,char** argv){
    bool is_vis = config["vis_parameter"]["is_vis"].as<bool>();
    if (is_vis) {
       std::string dataset_json_path = config["dataset_json_path"].as<std::string>();
-      std::string vis_save_path = config["vis_save_path"].as<std::string>();
-      std::string rotation_bbox_vis_save_path = config["rotation_bbox_vis_save_path"].as<std::string>();
+      std::string vis_save_path = config["vis_parameter"]["vis_save_path"].as<std::string>();
+      std::string rotation_bbox_vis_save_path = config["vis_parameter"]["rotation_bbox_vis_save_path"].as<std::string>();
       std::string dataset_images_path = config["dataset_images_path"].as<std::string>();
       VisCoCo vis(dataset_json_path, dataset_images_path, vis_save_path, rotation_bbox_vis_save_path);
       vis.visualize_bboxes_in_images();

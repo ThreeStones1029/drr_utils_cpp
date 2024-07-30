@@ -4,7 +4,7 @@
  * @Author: ThreeStones1029 2320218115@qq.com
  * @Date: 2024-07-29 02:12:44
  * @LastEditors: ShuaiLei
- * @LastEditTime: 2024-07-29 15:17:18
+ * @LastEditTime: 2024-07-30 01:52:17
  */
 #include <opencv2/opencv.hpp>
 #include <nlohmann/json.hpp>
@@ -60,13 +60,12 @@ void VisCoCo::visualize_bboxes_in_image(const std::string& file_path) {
 void VisCoCo::draw_bbox(cv::Mat& image, const std::vector<nlohmann::json>& annotations) {
     for (const auto& ann : annotations) {
         auto bbox = ann["bbox"];
-        std::cout << bbox[0] << bbox[1] << bbox[2] << bbox[3] << std::endl;
         int xmin = bbox[0];
         int ymin = bbox[1];
-        // int xmax = xmin + bbox[2];
-        // int ymax = ymin + bbox[3];
-        int xmax = xmin;
-        int ymax = ymin;
+        int width = bbox[2];
+        int height = bbox[3];
+        int xmax = xmin + width;
+        int ymax = ymin + height;
         cv::rectangle(image, cv::Point(xmin, ymin), cv::Point(xmax, ymax), cv::Scalar(0, 0, 255), 2);
         
         int catid = ann["category_id"];

@@ -19,7 +19,7 @@ int GenerateDrrs(const std::string& ct_file_path, const std::vector<std::vector<
 
 int GenerateMasks(const std::string& ct_name, const std::vector<std::string>& seg_filepaths, const std::vector<std::vector<double>>& rotations, 
                   const std::vector<std::vector<double>>& translations, bool save_img, double sid_value, 
-                  double sx_value, double sy_value, int dx_value, int dy_value, double threshold_value, 
+                  double sx_value, double sy_value, int dx_value, int dy_value, double threshold_value, double min_bbox_percentage_of_height,
                   const std::string& APorLA, const std::string& save_images_folder, const std::unique_ptr<COCODetectionData>& detection_dataset, int start_image_id);
 
 #endif
